@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Header component should take a snapshop 1`] = `
+<nav
+  className="sc-eCApnc fXmNKk"
+>
+  <ul
+    className="sc-jSFjdj hAIGZ"
+  >
+    <li
+      className="sc-gKAaRy insOOh"
+    >
+      <i
+        className="fas fa-bars fa-lg"
+      />
+    </li>
+    <li
+      className="sc-gKAaRy insOOh"
+    >
+      <form
+        className="sc-fujyAs jgUeTi"
+        onSubmit={[Function]}
+      >
+        <button
+          className="sc-pNWdM eAAEIR"
+          type="submit"
+        >
+          <i
+            className="fas fa-search fa-lg"
+          />
+        </button>
+        <input
+          className="sc-jrsJWt fksNle"
+          onChange={[Function]}
+          placeholder="Search"
+          type="text"
+          value="wizeline"
+        />
+      </form>
+    </li>
+    <div
+      className="sc-iCoGMd itDCGY"
+    />
+    <div
+      className="sc-kEqXSa icHqns"
+      on="md"
+    >
+      <li
+        className="sc-gKAaRy insOOh"
+      >
+        <div
+          className="sc-bdnxRM hFrJuC"
+        >
+          <label
+            className="sc-gtsrHT iezsSu"
+          >
+            <input
+              checked={true}
+              onChange={[Function]}
+              type="checkbox"
+            />
+            <span
+              className="sc-dlnjwi jWmvFX"
+            />
+          </label>
+          <p
+            className="sc-hKFxyN jPxugC"
+          >
+            Dark mode
+          </p>
+        </div>
+      </li>
+    </div>
+    <div
+      className="sc-kEqXSa icHqns"
+      on="md"
+    >
+      <li
+        className="sc-gKAaRy insOOh"
+      >
+        <i
+          className="fas fa-user-circle fa-lg"
+        />
+      </li>
+    </div>
+  </ul>
+</nav>
+`;

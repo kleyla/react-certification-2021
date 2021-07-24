@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Toggle component should to take snapshop 1`] = `
+<div
+  className="sc-bdnxRM hFrJuC"
+>
+  <label
+    className="sc-gtsrHT iezsSu"
+  >
+    <input
+      checked={true}
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <span
+      className="sc-dlnjwi jWmvFX"
+    />
+  </label>
+  <p
+    className="sc-hKFxyN jPxugC"
+  >
+    Dark mode
+  </p>
+</div>
+`;

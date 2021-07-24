@@ -31,6 +31,7 @@ export const Header = () => {
               <i className="fas fa-search fa-lg" />
             </ButtonIcon>
             <TextField
+              placeholder="Search"
               type="text"
               value={search}
               onChange={(e) => setSearch(e.target.value)}

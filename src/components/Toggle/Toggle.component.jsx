@@ -2,8 +2,6 @@ import React from 'react';
 import { SliderRound, ToggleContainer, ToggleSwitch, Typography } from './Toggle.styled';
 
 export const Toggle = ({ text, checked, setChecked }) => {
-  console.log(checked);
-
   return (
     <ToggleContainer>
       <ToggleSwitch>
