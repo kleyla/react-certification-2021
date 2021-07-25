@@ -9,14 +9,18 @@ Array [
       className="sc-iqAclL fsVgOs"
     >
       <li
-        className="sc-crzoAE hEbGOa"
+        className="sc-crzoAE eRXAle"
       >
-        <i
-          className="fas fa-bars fa-lg"
-        />
+        <button
+          className="sc-hBMUJo bYXcVj"
+        >
+          <i
+            className="fas fa-bars fa-lg"
+          />
+        </button>
       </li>
       <li
-        className="sc-crzoAE hEbGOa"
+        className="sc-crzoAE eRXAle"
       >
         <form
           className="sc-bqGGPW bVYrSk"
@@ -31,7 +35,7 @@ Array [
             />
           </button>
           <input
-            className="sc-hBMUJo fNJfr"
+            className="sc-fnVZcZ gsmVxt"
             onChange={[Function]}
             placeholder="Search"
             type="text"
@@ -43,11 +47,11 @@ Array [
         className="sc-dIsUp clpQzo"
       />
       <div
-        className="sc-fnVZcZ jghALA"
+        className="sc-fFSPTT cAveVu"
         on="md"
       >
         <li
-          className="sc-crzoAE hEbGOa"
+          className="sc-crzoAE eRXAle"
         >
           <div
             className="sc-iCoGMd dUUdDe"
@@ -73,15 +77,19 @@ Array [
         </li>
       </div>
       <div
-        className="sc-fnVZcZ jghALA"
+        className="sc-fFSPTT cAveVu"
         on="md"
       >
         <li
-          className="sc-crzoAE hEbGOa"
+          className="sc-crzoAE eRXAle"
         >
-          <i
-            className="fas fa-user-circle fa-lg"
-          />
+          <button
+            className="sc-hBMUJo bYXcVj"
+          >
+            <i
+              className="fas fa-user-circle fa-3x"
+            />
+          </button>
         </li>
       </div>
     </ul>

@@ -8,14 +8,18 @@ exports[`Testing Header component should take a snapshop 1`] = `
     className="sc-jSFjdj hAIGZ"
   >
     <li
-      className="sc-gKAaRy insOOh"
+      className="sc-gKAaRy WUxYp"
     >
-      <i
-        className="fas fa-bars fa-lg"
-      />
+      <button
+        className="sc-jrsJWt bclSvC"
+      >
+        <i
+          className="fas fa-bars fa-lg"
+        />
+      </button>
     </li>
     <li
-      className="sc-gKAaRy insOOh"
+      className="sc-gKAaRy WUxYp"
     >
       <form
         className="sc-fujyAs jgUeTi"
@@ -30,7 +34,7 @@ exports[`Testing Header component should take a snapshop 1`] = `
           />
         </button>
         <input
-          className="sc-jrsJWt fksNle"
+          className="sc-kEqXSa dlXvft"
           onChange={[Function]}
           placeholder="Search"
           type="text"
@@ -42,11 +46,11 @@ exports[`Testing Header component should take a snapshop 1`] = `
       className="sc-iCoGMd itDCGY"
     />
     <div
-      className="sc-kEqXSa icHqns"
+      className="sc-iqAclL iFynqj"
       on="md"
     >
       <li
-        className="sc-gKAaRy insOOh"
+        className="sc-gKAaRy WUxYp"
       >
         <div
           className="sc-bdnxRM hFrJuC"
@@ -72,15 +76,19 @@ exports[`Testing Header component should take a snapshop 1`] = `
       </li>
     </div>
     <div
-      className="sc-kEqXSa icHqns"
+      className="sc-iqAclL iFynqj"
       on="md"
     >
       <li
-        className="sc-gKAaRy insOOh"
+        className="sc-gKAaRy WUxYp"
       >
-        <i
-          className="fas fa-user-circle fa-lg"
-        />
+        <button
+          className="sc-jrsJWt bclSvC"
+        >
+          <i
+            className="fas fa-user-circle fa-3x"
+          />
+        </button>
       </li>
     </div>
   </ul>
