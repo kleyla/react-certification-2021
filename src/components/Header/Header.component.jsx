@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Toggle } from '../Toggle/Toggle.component';
 import {
   ButtonIcon,
+  ButtonIconInput,
   Form,
   HiddenDown,
   Menu,
@@ -23,13 +24,15 @@ export const Header = () => {
     <Navbar>
       <Menu>
         <MenuItem>
-          <i className="fas fa-bars fa-lg" />
+          <ButtonIcon>
+            <i className="fas fa-bars fa-lg" />
+          </ButtonIcon>
         </MenuItem>
         <MenuItem>
           <Form onSubmit={handleSearch}>
-            <ButtonIcon type="submit">
+            <ButtonIconInput type="submit">
               <i className="fas fa-search fa-lg" />
-            </ButtonIcon>
+            </ButtonIconInput>
             <TextField
               placeholder="Search"
               type="text"
@@ -46,7 +49,9 @@ export const Header = () => {
         </HiddenDown>
         <HiddenDown on="md">
           <MenuItem>
-            <i className="fas fa-user-circle fa-lg" />
+            <ButtonIcon>
+              <i className="fas fa-user-circle fa-3x" />
+            </ButtonIcon>
           </MenuItem>
         </HiddenDown>
       </Menu>

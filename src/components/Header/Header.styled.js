@@ -16,6 +16,7 @@ export const Menu = styled.ul`
 export const MenuItem = styled.li`
   padding: 12px;
   cursor: pointer;
+  height: 100%;
 
   > i {
     color: #fff;
@@ -39,7 +40,7 @@ export const Form = styled.form`
   border-radius: 4px;
 `;
 
-export const ButtonIcon = styled.button`
+export const ButtonIconInput = styled.button`
   position: absolute;
   left: 0;
   height: 100%;
@@ -54,6 +55,22 @@ export const ButtonIcon = styled.button`
   > i {
     width: 16px;
     height: auto;
+  }
+`;
+
+export const ButtonIcon = styled.button`
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  background: transparent;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.15);
   }
 `;
 
