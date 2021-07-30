@@ -5,7 +5,7 @@ export const Card = ({ item }) => {
   return (
     <CardContent>
       <CardLink>
-        <CardImage src={item.snippet.thumbnails.default.url} />
+        <CardImage src={item.snippet.thumbnails.medium.url} />
         <CardBody>
           <Typography as="h2">{item.snippet.title}</Typography>
           <Typography as="p">{item.snippet.description}</Typography>

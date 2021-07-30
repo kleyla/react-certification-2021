@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
+import { AppContext } from '../../context/appContext';
+import { types } from '../../types/types';
 import { Toggle } from '../Toggle/Toggle.component';
 import {
   ButtonIcon,
@@ -13,11 +15,22 @@ import {
 } from './Header.styled';
 
 export const Header = () => {
-  const [search, setSearch] = useState('wizeline');
+  const { data, dispatch } = useContext(AppContext);
+  const [searchInput, setSearchInput] = useState(data.search);
   const [checked, setChecked] = useState(true);
 
   const handleSearch = (event) => {
     event.preventDefault();
+    if (!searchInput) {
+      console.log('vacio');
+      return;
+    }
+    dispatch({
+      type: types.search,
+      payload: {
+        search: searchInput,
+      },
+    });
   };
 
   return (
@@ -36,8 +49,8 @@ export const Header = () => {
             <TextField
               placeholder="Search"
               type="text"
-              value={search}
-              onChange={(e) => setSearch(e.target.value)}
+              value={searchInput}
+              onChange={(e) => setSearchInput(e.target.value)}
             />
           </Form>
         </MenuItem>
