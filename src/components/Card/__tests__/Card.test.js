@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 
-import { Card } from '../../../components/Card/Card.component';
+import { Card } from '../Card.component';
 import data from '../../../mocks/youtube.json';
 
 describe('Testing Card component', () => {

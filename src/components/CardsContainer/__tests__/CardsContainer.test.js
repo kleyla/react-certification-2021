@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { CardsContainer } from '../../../components/CardsContainer/CardsContainer.component';
+import { CardsContainer } from '../CardsContainer.component';
 
 describe('Testing CardsContainer component', () => {
   it('should take a snapshop', () => {
