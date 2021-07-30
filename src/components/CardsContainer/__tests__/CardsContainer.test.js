@@ -1,10 +1,10 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
 import { CardsContainer } from '../CardsContainer.component';
 
 describe('Testing CardsContainer component', () => {
   it('should take a snapshop', () => {
-    const tree = renderer.create(<CardsContainer />).toJSON();
+    const tree = render(<CardsContainer />);
     expect(tree).toMatchSnapshot();
   });
 });
