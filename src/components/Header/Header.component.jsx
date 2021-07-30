@@ -51,6 +51,7 @@ export const Header = () => {
               type="text"
               value={searchInput}
               onChange={(e) => setSearchInput(e.target.value)}
+              onKeyPress={(e) => e.key === 'Enter' && handleSearch}
             />
           </Form>
         </MenuItem>
