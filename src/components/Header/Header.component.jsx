@@ -31,6 +31,11 @@ export const Header = () => {
         search: searchInput,
       },
     });
+    if (data.showVideoDetails) {
+      dispatch({
+        type: types.showVideoList,
+      });
+    }
   };
 
   return (

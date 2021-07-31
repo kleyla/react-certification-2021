@@ -8,7 +8,7 @@ import { Header } from '../Header/Header.component';
 
 function App() {
   const init = () => {
-    return { search: 'wizeline' };
+    return { search: 'wizeline', showVideoDetails: false };
   };
   const [data, dispatch] = useReducer(appReducer, {}, init);
 

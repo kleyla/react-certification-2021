@@ -1,29 +1,32 @@
 import styled, { keyframes } from 'styled-components';
 
 export const Container = styled.div`
-  display: grid;
+  padding-top: 30px;
+`;
+export const VideoListContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+export const VideoList = styled.div`
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  /* padding: 20px; */
+  margin: 0px auto;
+  box-sizing: border-box;
 
-  > div {
+  @media only screen and (min-width: 0px) {
     width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    /* padding: 20px; */
-    margin: 0px auto;
-    box-sizing: border-box;
-
-    @media only screen and (min-width: 0px) {
-      width: 100%;
-      justify-content: center;
-    }
-    @media only screen and (min-width: 770px) {
-      width: 770px;
-    }
-    @media only screen and (min-width: 1135px) {
-      width: 1135px;
-    }
-    @media only screen and (min-width: 1500px) {
-      width: 1500px;
-    }
+    justify-content: center;
+  }
+  @media only screen and (min-width: 770px) {
+    width: 770px;
+  }
+  @media only screen and (min-width: 1135px) {
+    width: 1135px;
+  }
+  @media only screen and (min-width: 1500px) {
+    width: 1500px;
   }
 `;
 
@@ -34,7 +37,6 @@ export const Typography = styled.p`
   line-height: 1.2;
   letter-spacing: -0.00833em;
   padding: 12px;
-  padding-top: 30px;
 `;
 
 const spin = keyframes`
