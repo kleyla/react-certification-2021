@@ -7,11 +7,6 @@ export const appReducer = (state = {}, action) => {
         ...state,
         ...action.payload,
       };
-    case types.videos:
-      return {
-        ...state,
-        ...action.payload,
-      };
     case types.showVideoDetails:
       return {
         ...state,
