@@ -22,7 +22,7 @@ export const Header = () => {
   const handleSearch = (event) => {
     event.preventDefault();
     if (!searchInput) {
-      console.log('vacio');
+      console.log('empty');
       return;
     }
     dispatch({

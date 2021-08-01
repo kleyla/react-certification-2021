@@ -5,61 +5,53 @@ Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div
-        class="sc-bdnxRM cLHiZi"
-      >
-        <button
-          class="sc-gtsrHT QwmBM"
-        >
-          <div
-            class="sc-dlnjwi cNUYuh"
-            src="https://i.ytimg.com/vi/nmXMgqjQzls/default.jpg"
-          />
-          <div
-            class="sc-eCApnc dLzmhV"
-          >
-            <h2
-              class="sc-hKFxyN gPycAm"
-            >
-              Video Tour | Welcome to Wizeline Guadalajara
-            </h2>
-            <p
-              class="sc-hKFxyN gPycAm"
-            >
-              Follow Hector Padilla, Wizeline Director of Engineering, for a lively tour of our office. In 2018, Wizeline opened its stunning new office in Guadalajara, Jalisco, ...
-            </p>
-          </div>
-        </button>
-      </div>
-    </div>
-  </body>,
-  "container": <div>
-    <div
-      class="sc-bdnxRM cLHiZi"
-    >
       <button
-        class="sc-gtsrHT QwmBM"
+        class="sc-bdnxRM cQeMSw"
       >
         <div
-          class="sc-dlnjwi cNUYuh"
-          src="https://i.ytimg.com/vi/nmXMgqjQzls/default.jpg"
+          class="sc-gtsrHT hYsIYV"
+          src="https://i.ytimg.com/vi/nmXMgqjQzls/mqdefault.jpg"
         />
         <div
-          class="sc-eCApnc dLzmhV"
+          class="sc-hKFxyN biVPrh"
         >
           <h2
-            class="sc-hKFxyN gPycAm"
+            class="sc-dlnjwi fODMA-D"
           >
             Video Tour | Welcome to Wizeline Guadalajara
           </h2>
           <p
-            class="sc-hKFxyN gPycAm"
+            class="sc-dlnjwi jnblUh"
           >
             Follow Hector Padilla, Wizeline Director of Engineering, for a lively tour of our office. In 2018, Wizeline opened its stunning new office in Guadalajara, Jalisco, ...
           </p>
         </div>
       </button>
     </div>
+  </body>,
+  "container": <div>
+    <button
+      class="sc-bdnxRM cQeMSw"
+    >
+      <div
+        class="sc-gtsrHT hYsIYV"
+        src="https://i.ytimg.com/vi/nmXMgqjQzls/mqdefault.jpg"
+      />
+      <div
+        class="sc-hKFxyN biVPrh"
+      >
+        <h2
+          class="sc-dlnjwi fODMA-D"
+        >
+          Video Tour | Welcome to Wizeline Guadalajara
+        </h2>
+        <p
+          class="sc-dlnjwi jnblUh"
+        >
+          Follow Hector Padilla, Wizeline Director of Engineering, for a lively tour of our office. In 2018, Wizeline opened its stunning new office in Guadalajara, Jalisco, ...
+        </p>
+      </div>
+    </button>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

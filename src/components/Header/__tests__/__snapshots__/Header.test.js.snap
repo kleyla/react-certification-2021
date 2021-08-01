@@ -2,191 +2,6 @@
 
 exports[`Testing Header component should take a snapshop 1`] = `
 Object {
-  "asFragment": [Function],
-  "baseElement": <body>
-    <div>
-      <nav
-        class="sc-eCApnc fXmNKk"
-      >
-        <ul
-          class="sc-jSFjdj hAIGZ"
-        >
-          <li
-            class="sc-gKAaRy WUxYp"
-          >
-            <button
-              class="sc-jrsJWt bclSvC"
-            >
-              <i
-                class="fas fa-bars fa-lg"
-              />
-            </button>
-          </li>
-          <li
-            class="sc-gKAaRy WUxYp"
-          >
-            <form
-              class="sc-fujyAs jgUeTi"
-            >
-              <button
-                class="sc-pNWdM eAAEIR"
-                type="submit"
-              >
-                <i
-                  class="fas fa-search fa-lg"
-                />
-              </button>
-              <input
-                class="sc-kEqXSa dlXvft"
-                placeholder="Search"
-                type="text"
-                value="wizeline"
-              />
-            </form>
-          </li>
-          <div
-            class="sc-iCoGMd itDCGY"
-          />
-          <div
-            class="sc-iqAclL iFynqj"
-            on="md"
-          >
-            <li
-              class="sc-gKAaRy WUxYp"
-            >
-              <div
-                class="sc-bdnxRM hFrJuC"
-              >
-                <label
-                  class="sc-gtsrHT iezsSu"
-                >
-                  <input
-                    checked=""
-                    type="checkbox"
-                  />
-                  <span
-                    class="sc-dlnjwi jWmvFX"
-                  />
-                </label>
-                <p
-                  class="sc-hKFxyN jPxugC"
-                >
-                  Dark mode
-                </p>
-              </div>
-            </li>
-          </div>
-          <div
-            class="sc-iqAclL iFynqj"
-            on="md"
-          >
-            <li
-              class="sc-gKAaRy WUxYp"
-            >
-              <button
-                class="sc-jrsJWt bclSvC"
-              >
-                <i
-                  class="fas fa-user-circle fa-3x"
-                />
-              </button>
-            </li>
-          </div>
-        </ul>
-      </nav>
-    </div>
-  </body>,
-  "container": <div>
-    <nav
-      class="sc-eCApnc fXmNKk"
-    >
-      <ul
-        class="sc-jSFjdj hAIGZ"
-      >
-        <li
-          class="sc-gKAaRy WUxYp"
-        >
-          <button
-            class="sc-jrsJWt bclSvC"
-          >
-            <i
-              class="fas fa-bars fa-lg"
-            />
-          </button>
-        </li>
-        <li
-          class="sc-gKAaRy WUxYp"
-        >
-          <form
-            class="sc-fujyAs jgUeTi"
-          >
-            <button
-              class="sc-pNWdM eAAEIR"
-              type="submit"
-            >
-              <i
-                class="fas fa-search fa-lg"
-              />
-            </button>
-            <input
-              class="sc-kEqXSa dlXvft"
-              placeholder="Search"
-              type="text"
-              value="wizeline"
-            />
-          </form>
-        </li>
-        <div
-          class="sc-iCoGMd itDCGY"
-        />
-        <div
-          class="sc-iqAclL iFynqj"
-          on="md"
-        >
-          <li
-            class="sc-gKAaRy WUxYp"
-          >
-            <div
-              class="sc-bdnxRM hFrJuC"
-            >
-              <label
-                class="sc-gtsrHT iezsSu"
-              >
-                <input
-                  checked=""
-                  type="checkbox"
-                />
-                <span
-                  class="sc-dlnjwi jWmvFX"
-                />
-              </label>
-              <p
-                class="sc-hKFxyN jPxugC"
-              >
-                Dark mode
-              </p>
-            </div>
-          </li>
-        </div>
-        <div
-          class="sc-iqAclL iFynqj"
-          on="md"
-        >
-          <li
-            class="sc-gKAaRy WUxYp"
-          >
-            <button
-              class="sc-jrsJWt bclSvC"
-            >
-              <i
-                class="fas fa-user-circle fa-3x"
-              />
-            </button>
-          </li>
-        </div>
-      </ul>
-    </nav>
-  </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
   "findAllByDisplayValue": [Function],
@@ -220,6 +35,7 @@ Object {
   "getByTestId": [Function],
   "getByText": [Function],
   "getByTitle": [Function],
+  "logTestingPlaygroundURL": [Function],
   "queryAllByAltText": [Function],
   "queryAllByDisplayValue": [Function],
   "queryAllByLabelText": [Function],
@@ -236,7 +52,5 @@ Object {
   "queryByTestId": [Function],
   "queryByText": [Function],
   "queryByTitle": [Function],
-  "rerender": [Function],
-  "unmount": [Function],
 }
 `;
