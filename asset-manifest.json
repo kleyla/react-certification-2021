@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/react-certification-2021/static/js/main.83a43ac4.chunk.js",
-    "main.js.map": "/react-certification-2021/static/js/main.83a43ac4.chunk.js.map",
+    "main.js": "/react-certification-2021/static/js/main.dacb8a20.chunk.js",
+    "main.js.map": "/react-certification-2021/static/js/main.dacb8a20.chunk.js.map",
     "runtime-main.js": "/react-certification-2021/static/js/runtime-main.d69dc15b.js",
     "runtime-main.js.map": "/react-certification-2021/static/js/runtime-main.d69dc15b.js.map",
-    "static/js/2.3940158d.chunk.js": "/react-certification-2021/static/js/2.3940158d.chunk.js",
-    "static/js/2.3940158d.chunk.js.map": "/react-certification-2021/static/js/2.3940158d.chunk.js.map",
+    "static/js/2.ad8e6c3b.chunk.js": "/react-certification-2021/static/js/2.ad8e6c3b.chunk.js",
+    "static/js/2.ad8e6c3b.chunk.js.map": "/react-certification-2021/static/js/2.ad8e6c3b.chunk.js.map",
     "index.html": "/react-certification-2021/index.html",
-    "precache-manifest.e06505d72dd301380cd1c8612f682b38.js": "/react-certification-2021/precache-manifest.e06505d72dd301380cd1c8612f682b38.js",
+    "precache-manifest.1f23c07fc948b1549bcc881727e93786.js": "/react-certification-2021/precache-manifest.1f23c07fc948b1549bcc881727e93786.js",
     "service-worker.js": "/react-certification-2021/service-worker.js",
-    "static/js/2.3940158d.chunk.js.LICENSE.txt": "/react-certification-2021/static/js/2.3940158d.chunk.js.LICENSE.txt"
+    "static/js/2.ad8e6c3b.chunk.js.LICENSE.txt": "/react-certification-2021/static/js/2.ad8e6c3b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.d69dc15b.js",
-    "static/js/2.3940158d.chunk.js",
-    "static/js/main.83a43ac4.chunk.js"
+    "static/js/2.ad8e6c3b.chunk.js",
+    "static/js/main.dacb8a20.chunk.js"
   ]
 }
