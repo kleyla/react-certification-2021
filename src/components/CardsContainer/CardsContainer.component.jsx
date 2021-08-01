@@ -15,8 +15,8 @@ import { AppContext } from '../../context/appContext';
 import { types } from '../../types/types';
 
 export const CardsContainer = () => {
-  const { data, dispatch } = useContext(AppContext);
-  const { showVideoDetails } = data;
+  const { state, dispatch } = useContext(AppContext);
+  const { showVideoDetails } = state;
   const { videoList, loading } = useFetchVideos();
   const [videoSelected, setVideoSelected] = useState({});
   // const loading = false;
@@ -27,7 +27,6 @@ export const CardsContainer = () => {
     setVideoSelected(video);
     // setShowVideoDetails(true);
     if (!showVideoDetails) {
-      console.log('showVideoDetails', showVideoDetails);
       dispatch({
         type: types.showVideoDetails,
       });
@@ -47,7 +46,7 @@ export const CardsContainer = () => {
           <Typography as="h2">Welcome to the Challenge!</Typography>
           <VideoList>
             {loading ? (
-              <Loader />
+              <Loader data-testid="loader" />
             ) : (
               videoList.map(
                 (item) =>

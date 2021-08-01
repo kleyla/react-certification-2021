@@ -7,7 +7,7 @@ import { AppContext } from '../../../context/appContext';
 describe('Testing Header component', () => {
   const contextValue = {
     dispatch: jest.fn(),
-    data: {
+    state: {
       search: 'wizeline',
       showVideoDetails: false,
     },

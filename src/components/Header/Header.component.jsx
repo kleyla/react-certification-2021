@@ -15,8 +15,8 @@ import {
 } from './Header.styled';
 
 export const Header = () => {
-  const { data, dispatch } = useContext(AppContext);
-  const [searchInput, setSearchInput] = useState(data.search);
+  const { state, dispatch } = useContext(AppContext);
+  const [searchInput, setSearchInput] = useState(state.search);
   const [checked, setChecked] = useState(true);
 
   const handleSearch = (event) => {
@@ -31,7 +31,7 @@ export const Header = () => {
         search: searchInput,
       },
     });
-    if (data.showVideoDetails) {
+    if (state.showVideoDetails) {
       dispatch({
         type: types.showVideoList,
       });

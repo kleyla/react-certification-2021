@@ -7,11 +7,15 @@ import data from '../../../mocks/youtube.json';
 describe('Testing VideoDetails', () => {
   const contextValue = {
     dispatch: jest.fn(),
-    data: {
+    state: {
       search: 'wizeline',
       showVideoDetails: false,
     },
   };
+
+  const videos = data.items.filter((item) => {
+    return item.id.kind === 'youtube#video';
+  });
 
   const video = data.items[1];
 
@@ -20,7 +24,7 @@ describe('Testing VideoDetails', () => {
   beforeEach(() => {
     render(
       <AppContext.Provider value={contextValue}>
-        <VideoDetails video={video} videoList={data.items} selectVideo={selectVideo} />
+        <VideoDetails video={video} videoList={videos} selectVideo={selectVideo} />
       </AppContext.Provider>
     );
   });

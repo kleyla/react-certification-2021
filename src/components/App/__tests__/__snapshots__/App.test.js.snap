@@ -110,6 +110,7 @@ Object {
           >
             <div
               class="sc-bqGGPW bpJbaq"
+              data-testid="loader"
             />
           </div>
         </div>
@@ -222,6 +223,7 @@ Object {
         >
           <div
             class="sc-bqGGPW bpJbaq"
+            data-testid="loader"
           />
         </div>
       </div>

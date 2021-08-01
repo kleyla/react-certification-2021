@@ -10,10 +10,10 @@ function App() {
   const init = () => {
     return { search: 'wizeline', showVideoDetails: false };
   };
-  const [data, dispatch] = useReducer(appReducer, {}, init);
+  const [state, dispatch] = useReducer(appReducer, {}, init);
 
   return (
-    <AppContext.Provider value={{ data, dispatch }}>
+    <AppContext.Provider value={{ state, dispatch }}>
       <GlobalStyles />
       <Header />
       <CardsContainer />
