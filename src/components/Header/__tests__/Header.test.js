@@ -1,7 +1,7 @@
 import React from 'react';
 import { fireEvent, render, screen } from '@testing-library/react';
 
-import { Header } from '../Header.component';
+import Header from '../index';
 import { AppContext } from '../../../context/appContext';
 
 describe('Testing Header component', () => {

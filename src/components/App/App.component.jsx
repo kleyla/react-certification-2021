@@ -3,8 +3,8 @@ import { AppContext } from '../../context/appContext';
 import { appReducer } from '../../context/appReducer';
 
 import { GlobalStyles } from '../../GlobalStyles.styled';
-import { CardsContainer } from '../CardsContainer/CardsContainer.component';
-import { Header } from '../Header/Header.component';
+import CardsContainer from '../CardsContainer';
+import Header from '../Header';
 
 function App() {
   const init = () => {

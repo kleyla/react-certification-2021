@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import { CardsContainer } from '../CardsContainer.component';
+import CardsContainer from '../index';
 import { AppContext } from '../../../context/appContext';
 
 describe('Testing CardsContainer component', () => {

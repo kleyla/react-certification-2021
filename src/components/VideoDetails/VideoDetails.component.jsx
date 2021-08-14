@@ -9,7 +9,7 @@ import {
   Typography,
 } from './VideoDetails.styled';
 
-export const VideoDetails = ({ video, videoList = [], selectVideo }) => {
+const VideoDetails = ({ video, videoList = [], selectVideo }) => {
   const { id, snippet } = video;
   return (
     <Grid container>
@@ -47,3 +47,5 @@ export const VideoDetails = ({ video, videoList = [], selectVideo }) => {
     </Grid>
   );
 };
+
+export default VideoDetails;

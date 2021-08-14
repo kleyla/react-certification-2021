@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { Toggle } from '../Toggle.component';
+import Toggle from '../index';
 
 describe('Testing Toggle component', () => {
   const checked = true;

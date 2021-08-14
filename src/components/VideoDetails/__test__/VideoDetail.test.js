@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import { AppContext } from '../../../context/appContext';
-import { VideoDetails } from '../VideoDetails';
+import VideoDetails from '../index';
 import data from '../../../mocks/youtube.json';
 
 describe('Testing VideoDetails', () => {

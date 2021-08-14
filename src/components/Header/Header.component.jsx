@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { AppContext } from '../../context/appContext';
 import { types } from '../../types/types';
-import { Toggle } from '../Toggle/Toggle.component';
+import Toggle from '../Toggle';
 import {
   ButtonIcon,
   ButtonIconInput,
@@ -14,7 +14,7 @@ import {
   TextField,
 } from './Header.styled';
 
-export const Header = () => {
+const Header = () => {
   const { state, dispatch } = useContext(AppContext);
   const [searchInput, setSearchInput] = useState(state.search);
   const [checked, setChecked] = useState(true);
@@ -77,3 +77,5 @@ export const Header = () => {
     </Navbar>
   );
 };
+
+export default Header;

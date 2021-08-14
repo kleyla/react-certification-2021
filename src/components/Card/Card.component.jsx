@@ -1,7 +1,7 @@
 import React from 'react';
 import { CardBody, CardImage, CardLink, Typography } from './Card.styled';
 
-export const Card = ({ item, onClick }) => {
+const Card = ({ item, onClick }) => {
   return (
     <CardLink onClick={onClick}>
       <CardImage src={item.snippet.thumbnails.medium.url} />
@@ -12,3 +12,5 @@ export const Card = ({ item, onClick }) => {
     </CardLink>
   );
 };
+
+export default Card;
