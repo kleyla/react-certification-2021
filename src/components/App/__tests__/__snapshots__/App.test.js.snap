@@ -6,13 +6,13 @@ Object {
   "baseElement": <body>
     <div>
       <nav
-        class="sc-bkbkJK jDKHyb"
+        class="sc-bkbkJK kDLClw"
       >
         <ul
-          class="sc-iemWCZ gHuJkp"
+          class="sc-iemWCZ hBWRUy"
         >
           <li
-            class="sc-dIvrsQ dQtNCl"
+            class="sc-dIvrsQ dsAgBF"
           >
             <button
               class="sc-fKgJPI fKEpZV"
@@ -23,7 +23,7 @@ Object {
             </button>
           </li>
           <li
-            class="sc-dIvrsQ dQtNCl"
+            class="sc-dIvrsQ dsAgBF"
           >
             <form
               class="sc-dlMDgC itdfBp"
@@ -48,15 +48,20 @@ Object {
             class="sc-hHEiqL bMJSTK"
           />
           <div
-            class="sc-iwajpm FOmfh"
+            class="sc-iwajpm eAhjvl"
             on="md"
           >
             <li
-              class="sc-dIvrsQ dQtNCl"
+              class="sc-dIvrsQ dsAgBF"
             >
               <div
                 class="sc-ksluID kJEHch"
               >
+                <p
+                  class="sc-fFSPTT efmUnI"
+                >
+                  Dark mode
+                </p>
                 <label
                   class="sc-hBMUJo ihzRLP"
                 >
@@ -65,23 +70,18 @@ Object {
                     type="checkbox"
                   />
                   <span
-                    class="sc-fnVZcZ feXmMQ"
+                    class="sc-fnVZcZ inGabQ"
                   />
                 </label>
-                <p
-                  class="sc-fFSPTT gZMECT"
-                >
-                  Dark mode
-                </p>
               </div>
             </li>
           </div>
           <div
-            class="sc-iwajpm FOmfh"
+            class="sc-iwajpm eAhjvl"
             on="md"
           >
             <li
-              class="sc-dIvrsQ dQtNCl"
+              class="sc-dIvrsQ dsAgBF"
             >
               <button
                 class="sc-fKgJPI fKEpZV"
@@ -95,21 +95,21 @@ Object {
         </ul>
       </nav>
       <div
-        class="sc-kEqXSa eUGnJk"
+        class="sc-kEqXSa bdllAS"
       >
         <div
           class="sc-iqAclL bRimEs"
         >
           <h2
-            class="sc-dIsUp kxqnRK"
+            class="sc-dIsUp eNHUoE"
           >
             Welcome to the Challenge!
           </h2>
           <div
-            class="sc-crzoAE bZHNht"
+            class="sc-crzoAE cVwAaF"
           >
             <div
-              class="sc-bqGGPW bpJbaq"
+              class="sc-bqGGPW gndsnd"
               data-testid="loader"
             />
           </div>
@@ -119,13 +119,13 @@ Object {
   </body>,
   "container": <div>
     <nav
-      class="sc-bkbkJK jDKHyb"
+      class="sc-bkbkJK kDLClw"
     >
       <ul
-        class="sc-iemWCZ gHuJkp"
+        class="sc-iemWCZ hBWRUy"
       >
         <li
-          class="sc-dIvrsQ dQtNCl"
+          class="sc-dIvrsQ dsAgBF"
         >
           <button
             class="sc-fKgJPI fKEpZV"
@@ -136,7 +136,7 @@ Object {
           </button>
         </li>
         <li
-          class="sc-dIvrsQ dQtNCl"
+          class="sc-dIvrsQ dsAgBF"
         >
           <form
             class="sc-dlMDgC itdfBp"
@@ -161,15 +161,20 @@ Object {
           class="sc-hHEiqL bMJSTK"
         />
         <div
-          class="sc-iwajpm FOmfh"
+          class="sc-iwajpm eAhjvl"
           on="md"
         >
           <li
-            class="sc-dIvrsQ dQtNCl"
+            class="sc-dIvrsQ dsAgBF"
           >
             <div
               class="sc-ksluID kJEHch"
             >
+              <p
+                class="sc-fFSPTT efmUnI"
+              >
+                Dark mode
+              </p>
               <label
                 class="sc-hBMUJo ihzRLP"
               >
@@ -178,23 +183,18 @@ Object {
                   type="checkbox"
                 />
                 <span
-                  class="sc-fnVZcZ feXmMQ"
+                  class="sc-fnVZcZ inGabQ"
                 />
               </label>
-              <p
-                class="sc-fFSPTT gZMECT"
-              >
-                Dark mode
-              </p>
             </div>
           </li>
         </div>
         <div
-          class="sc-iwajpm FOmfh"
+          class="sc-iwajpm eAhjvl"
           on="md"
         >
           <li
-            class="sc-dIvrsQ dQtNCl"
+            class="sc-dIvrsQ dsAgBF"
           >
             <button
               class="sc-fKgJPI fKEpZV"
@@ -208,21 +208,21 @@ Object {
       </ul>
     </nav>
     <div
-      class="sc-kEqXSa eUGnJk"
+      class="sc-kEqXSa bdllAS"
     >
       <div
         class="sc-iqAclL bRimEs"
       >
         <h2
-          class="sc-dIsUp kxqnRK"
+          class="sc-dIsUp eNHUoE"
         >
           Welcome to the Challenge!
         </h2>
         <div
-          class="sc-crzoAE bZHNht"
+          class="sc-crzoAE cVwAaF"
         >
           <div
-            class="sc-bqGGPW bpJbaq"
+            class="sc-bqGGPW gndsnd"
             data-testid="loader"
           />
         </div>

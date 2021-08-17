@@ -8,6 +8,11 @@ Object {
       <div
         class="sc-bdnxRM hFrJuC"
       >
+        <p
+          class="sc-hKFxyN SUEDR"
+        >
+          Dark mode
+        </p>
         <label
           class="sc-gtsrHT iezsSu"
         >
@@ -16,14 +21,9 @@ Object {
             type="checkbox"
           />
           <span
-            class="sc-dlnjwi jWmvFX"
+            class="sc-dlnjwi lhktTD"
           />
         </label>
-        <p
-          class="sc-hKFxyN jPxugC"
-        >
-          Dark mode
-        </p>
       </div>
     </div>
   </body>,
@@ -31,6 +31,11 @@ Object {
     <div
       class="sc-bdnxRM hFrJuC"
     >
+      <p
+        class="sc-hKFxyN SUEDR"
+      >
+        Dark mode
+      </p>
       <label
         class="sc-gtsrHT iezsSu"
       >
@@ -39,14 +44,9 @@ Object {
           type="checkbox"
         />
         <span
-          class="sc-dlnjwi jWmvFX"
+          class="sc-dlnjwi lhktTD"
         />
       </label>
-      <p
-        class="sc-hKFxyN jPxugC"
-      >
-        Dark mode
-      </p>
     </div>
   </div>,
   "debug": [Function],
