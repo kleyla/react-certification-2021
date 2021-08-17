@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 
 export const CardLink = styled.button`
+  background-color: ${(props) => props.theme.cardBg};
+  color: ${(props) => props.theme.color};
   display: flex;
   flex-direction: column;
-  background-color: transparent;
   cursor: pointer;
   border: 0;
   outline: 0;
@@ -15,7 +16,7 @@ export const CardLink = styled.button`
     0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 
   &:hover {
-    background-color: rgb(240, 240, 240);
+    background-color: ${(props) => props.theme.cardBgHover};
   }
 `;
 

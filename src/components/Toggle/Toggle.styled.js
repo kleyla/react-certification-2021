@@ -22,15 +22,13 @@ export const ToggleSwitch = styled.label`
 export const SliderRound = styled.span`
   position: absolute;
   cursor: pointer;
-  background-color: #ccc;
+  background-color: #1e1e2f;
   border-radius: 25px;
   top: 5px;
   bottom: 5px;
   right: 0;
   left: 0;
   transition: background-color 0.2s ease;
-
-  ${({ dark }) => dark && `background-color: #000;`}
 
   &:before {
     position: absolute;
@@ -48,5 +46,5 @@ export const SliderRound = styled.span`
 `;
 
 export const Typography = styled.p`
-  margin-left: 10px;
+  margin-right: 10px;
 `;

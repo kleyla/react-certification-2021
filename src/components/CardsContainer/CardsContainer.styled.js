@@ -1,7 +1,9 @@
 import styled, { keyframes } from 'styled-components';
 
 export const Container = styled.div`
+  background-color: ${(props) => props.theme.body};
   padding-top: 30px;
+  min-height: calc(100vh - 64px);
 `;
 export const VideoListContainer = styled.div`
   display: flex;
@@ -11,7 +13,6 @@ export const VideoList = styled.div`
   width: 100%;
   display: flex;
   flex-flow: row wrap;
-  /* padding: 20px; */
   margin: 0px auto;
   box-sizing: border-box;
 
@@ -37,6 +38,7 @@ export const Typography = styled.p`
   line-height: 1.2;
   letter-spacing: -0.00833em;
   padding: 12px;
+  color: ${(props) => props.theme.color};
 `;
 
 const spin = keyframes`
@@ -49,7 +51,7 @@ const spin = keyframes`
 `;
 
 export const Loader = styled.div`
-  border: 8px solid #1c5476;
+  border: 8px solid ${(props) => props.theme.headerBg};
   border-top: 8px solid #ccc;
   border-radius: 50%;
   width: 80px;

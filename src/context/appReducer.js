@@ -17,6 +17,11 @@ export const appReducer = (state = {}, action) => {
         ...state,
         showVideoDetails: false,
       };
+    case types.theme:
+      return {
+        ...state,
+        theme: !state.theme,
+      };
     default:
       return state;
   }

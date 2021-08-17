@@ -17,7 +17,6 @@ import {
 const Header = () => {
   const { state, dispatch } = useContext(AppContext);
   const [searchInput, setSearchInput] = useState(state.search);
-  const [checked, setChecked] = useState(true);
 
   const handleSearch = (event) => {
     event.preventDefault();
@@ -36,6 +35,12 @@ const Header = () => {
         type: types.showVideoList,
       });
     }
+  };
+
+  const handleToggle = () => {
+    dispatch({
+      type: types.theme,
+    });
   };
 
   return (
@@ -63,7 +68,7 @@ const Header = () => {
         <Spacer />
         <HiddenDown on="md">
           <MenuItem>
-            <Toggle text="Dark mode" checked={checked} setChecked={setChecked} />
+            <Toggle text="Dark mode" checked={state.theme} setChecked={handleToggle} />
           </MenuItem>
         </HiddenDown>
         <HiddenDown on="md">

@@ -4,6 +4,7 @@ import { SliderRound, ToggleContainer, ToggleSwitch, Typography } from './Toggle
 const Toggle = ({ text, checked, setChecked }) => {
   return (
     <ToggleContainer>
+      <Typography>{text}</Typography>
       <ToggleSwitch>
         <input
           type="checkbox"
@@ -12,7 +13,6 @@ const Toggle = ({ text, checked, setChecked }) => {
         />
         <SliderRound dark={checked} />
       </ToggleSwitch>
-      <Typography>{text}</Typography>
     </ToggleContainer>
   );
 };

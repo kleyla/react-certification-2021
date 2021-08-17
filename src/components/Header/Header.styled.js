@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Navbar = styled.nav`
-  background-color: #1c5476;
+  background-color: ${(props) => props.theme.headerBg};
 `;
 
 export const Menu = styled.ul`
@@ -10,13 +10,12 @@ export const Menu = styled.ul`
   align-items: center;
   padding-left: 24px;
   padding-right: 24px;
-  min-height: 64px;
+  height: 64px;
 `;
 
 export const MenuItem = styled.li`
-  padding: 12px;
+  padding: 0 12px;
   cursor: pointer;
-  height: 100%;
 
   > i {
     color: #fff;
@@ -91,17 +90,17 @@ export const TextField = styled.input`
 export const HiddenDown = styled.div`
   @media only screen and (max-width: 600px) {
     ${({ on }) => {
-      if (on === 'sm') return `display: none; background: red;`;
+      if (on === 'sm') return `display: none;`;
     }}
   }
   @media only screen and (max-width: 960px) {
     ${({ on }) => {
-      if (on === 'md') return `display: none; background: green;`;
+      if (on === 'md') return `display: none;`;
     }}
   }
   @media only screen and (max-width: 1280px) {
     ${({ on }) => {
-      if (on === 'lg') return `display: none; background: yellow;`;
+      if (on === 'lg') return `display: none;`;
     }}
   }
 `;
