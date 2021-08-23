@@ -3,8 +3,9 @@ const lightTheme = {
   cardBg: '#fff',
   cardBgHover: 'rgb(240, 240, 240)',
   color: '#000',
-  headerBg: '#1C5476',
+  headerBg: '#825ee4',
   textTiny: 'rgb(70, 70, 70)',
+  btn: '#825ee4',
 };
 
 const darkTheme = {
@@ -14,6 +15,7 @@ const darkTheme = {
   color: '#fff',
   headerBg: '#7b1fa2',
   textTiny: '#fff',
+  btn: '#7b1fa2',
 };
 
 export { lightTheme, darkTheme };

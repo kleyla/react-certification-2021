@@ -4,9 +4,9 @@ import { ThemeProvider } from 'styled-components';
 import { AppContext } from '../../context/appContext';
 import { appReducer } from '../../context/appReducer';
 import { GlobalStyles } from '../../GlobalStyles.styled';
-import CardsContainer from '../CardsContainer';
 import Header from '../Header';
 import { lightTheme, darkTheme } from '../../theming';
+import { AppRouter } from '../../routers/AppRouter';
 
 function App() {
   const init = () => {
@@ -23,7 +23,7 @@ function App() {
       <ThemeProvider theme={state.theme ? lightTheme : darkTheme}>
         <GlobalStyles />
         <Header />
-        <CardsContainer />
+        <AppRouter />
       </ThemeProvider>
     </AppContext.Provider>
   );

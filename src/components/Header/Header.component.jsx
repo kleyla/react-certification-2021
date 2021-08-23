@@ -5,6 +5,7 @@ import Toggle from '../Toggle';
 import {
   ButtonIcon,
   ButtonIconInput,
+  Dropdown,
   Form,
   HiddenDown,
   Menu,
@@ -17,6 +18,7 @@ import {
 const Header = () => {
   const { state, dispatch } = useContext(AppContext);
   const [searchInput, setSearchInput] = useState(state.search);
+  const [dropdown, setDropdown] = useState(false);
 
   const handleSearch = (event) => {
     event.preventDefault();
@@ -41,6 +43,10 @@ const Header = () => {
     dispatch({
       type: types.theme,
     });
+  };
+
+  const handleDropdown = () => {
+    setDropdown((value) => !value);
   };
 
   return (
@@ -73,9 +79,16 @@ const Header = () => {
         </HiddenDown>
         <HiddenDown on="md">
           <MenuItem>
-            <ButtonIcon>
+            <ButtonIcon onClick={handleDropdown}>
               <i className="fas fa-user-circle fa-3x" />
             </ButtonIcon>
+            {dropdown && (
+              <Dropdown>
+                <Menu column>
+                  <MenuItem dropdown>Iniciar session</MenuItem>
+                </Menu>
+              </Dropdown>
+            )}
           </MenuItem>
         </HiddenDown>
       </Menu>

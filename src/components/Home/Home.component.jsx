@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
 
-import { useFetchVideos } from '../../utils/hooks/useFetchVideos';
+// import { useFetchVideos } from '../../utils/hooks/useFetchVideos';
 import Card from '../Card';
 import VideoDetails from '../VideoDetails';
 import {
@@ -9,15 +9,18 @@ import {
   Typography,
   VideoList,
   VideoListContainer,
-} from './CardsContainer.styled';
+} from './Home.styled';
 import { AppContext } from '../../context/appContext';
 import { types } from '../../types/types';
 
-const CardsContainer = () => {
+const Home = () => {
   const { state, dispatch } = useContext(AppContext);
   const { showVideoDetails } = state;
-  const { videoList, loading } = useFetchVideos();
+  // const { videoList, loading } = useFetchVideos();
   const [videoSelected, setVideoSelected] = useState({});
+
+  const videoList = [];
+  const loading = false;
 
   const selectVideo = (video) => {
     setVideoSelected(video);
@@ -61,4 +64,4 @@ const CardsContainer = () => {
   );
 };
 
-export default CardsContainer;
+export default Home;

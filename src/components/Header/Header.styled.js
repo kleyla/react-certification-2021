@@ -11,11 +11,25 @@ export const Menu = styled.ul`
   padding-left: 24px;
   padding-right: 24px;
   height: 64px;
+
+  ${({ column }) =>
+    column &&
+    `flex-direction: column;
+      padding: 0;
+      height: auto;
+      white-space: nowrap;
+    `}
+
+  &:hover {
+    ${({ column }) => column && `background-color: #ccc`}
+  }
 `;
 
 export const MenuItem = styled.li`
   padding: 0 12px;
   cursor: pointer;
+
+  ${({ dropdown }) => dropdown && `position: relative; padding 8px 16px;`}
 
   > i {
     color: #fff;
@@ -103,4 +117,21 @@ export const HiddenDown = styled.div`
       if (on === 'lg') return `display: none;`;
     }}
   }
+`;
+
+export const Dropdown = styled.div`
+  min-width: 127px;
+  height: auto;
+  background-color: ${(props) => props.theme.cardBg};
+  border-radius: 4px;
+  position: absolute;
+  top: 24px;
+  right: 20px;
+  box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14),
+    0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+  padding: 8px 0;
+`;
+
+export const MenuColumn = styled.ul`
+  display: flex;
 `;
