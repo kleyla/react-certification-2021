@@ -1,4 +1,5 @@
 import React, { useReducer } from 'react';
+import { HashRouter } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 
 import { AppContext } from '../../context/appContext';
@@ -22,8 +23,10 @@ function App() {
     <AppContext.Provider value={{ state, dispatch }}>
       <ThemeProvider theme={state.theme ? lightTheme : darkTheme}>
         <GlobalStyles />
-        <Header />
-        <AppRouter />
+        <HashRouter>
+          <Header />
+          <AppRouter />
+        </HashRouter>
       </ThemeProvider>
     </AppContext.Provider>
   );

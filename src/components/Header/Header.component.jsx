@@ -1,4 +1,5 @@
 import React, { useContext, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { AppContext } from '../../context/appContext';
 import { types } from '../../types/types';
 import Toggle from '../Toggle';
@@ -85,7 +86,12 @@ const Header = () => {
             {dropdown && (
               <Dropdown>
                 <Menu column>
-                  <MenuItem dropdown>Iniciar session</MenuItem>
+                  <MenuItem dropdown>
+                    <Link to="/login">Iniciar session</Link>
+                  </MenuItem>
+                  <MenuItem dropdown>
+                    <Link to="/login">Favoritos</Link>
+                  </MenuItem>
                 </Menu>
               </Dropdown>
             )}

@@ -15,19 +15,17 @@ export const Menu = styled.ul`
   ${({ column }) =>
     column &&
     `flex-direction: column;
+      align-items: flex-start;
       padding: 0;
       height: auto;
       white-space: nowrap;
     `}
-
-  &:hover {
-    ${({ column }) => column && `background-color: #ccc`}
-  }
 `;
 
 export const MenuItem = styled.li`
   padding: 0 12px;
   cursor: pointer;
+  width: 100%;
 
   ${({ dropdown }) => dropdown && `position: relative; padding 8px 16px;`}
 
@@ -35,6 +33,15 @@ export const MenuItem = styled.li`
     color: #fff;
     font-size: 1.5rem;
     margin-right: 16px;
+  }
+
+  > a {
+    text-decoration: none;
+    color: ${(props) => props.theme.color};
+  }
+
+  &:hover {
+    ${(props) => props.dropdown && `background-color: ${props.theme.cardBgHover};`}
   }
 `;
 
