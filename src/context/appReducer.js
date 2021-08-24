@@ -7,20 +7,26 @@ export const appReducer = (state = {}, action) => {
         ...state,
         ...action.payload,
       };
-    case types.showVideoDetails:
+    case types.videoList:
       return {
         ...state,
-        showVideoDetails: true,
-      };
-    case types.showVideoList:
-      return {
-        ...state,
-        showVideoDetails: false,
+        ...action.payload,
       };
     case types.theme:
       return {
         ...state,
         theme: !state.theme,
+      };
+    case types.auth:
+      return {
+        ...state,
+        ...action.payload,
+      };
+    case types.logout:
+      return {
+        ...state,
+        isAuthenticated: false,
+        auth: {},
       };
     default:
       return state;

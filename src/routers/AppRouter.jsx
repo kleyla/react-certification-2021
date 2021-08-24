@@ -42,6 +42,7 @@ export const AppRouter = () => {
         exact
         component={() => (isLoggedIn ? <Redirect to="/" /> : <Login />)}
       />
+      <Route path="/video/:id" exact component={VideoDetails} />
       <PrivateRoute
         isAuthenticated={isLoggedIn}
         component={Favorites}
@@ -51,7 +52,7 @@ export const AppRouter = () => {
       <PrivateRoute
         isAuthenticated={isLoggedIn}
         component={VideoDetails}
-        path="/video/:id"
+        path="/favorite/:id"
         exact
       />
       <Redirect to="/" />

@@ -1,6 +1,7 @@
 export const types = {
   search: 'search',
-  showVideoDetails: 'showVideoDetails',
-  showVideoList: 'showVideoList',
+  videoList: 'videoList',
   theme: 'theme',
+  auth: 'auth',
+  logout: 'logout',
 };
