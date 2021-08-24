@@ -1,14 +1,18 @@
 import React from 'react';
-import { CardBody, CardImage, CardLink, Typography } from './Card.styled';
+import { Link } from 'react-router-dom';
+import { CardBody, CardImage, CardLink, CardTitle, Paragraph } from './Card.styled';
 
 const Card = ({ item, onClick }) => {
+  console.log(item);
   return (
     <CardLink onClick={onClick}>
-      <CardImage src={item.snippet.thumbnails.medium.url} />
-      <CardBody>
-        <Typography as="h2">{item.snippet.title}</Typography>
-        <Typography as="p">{item.snippet.description}</Typography>
-      </CardBody>
+      <Link to={item.id.videoId ? `/video/${item.id.videoId}` : `/video/${item.id}`}>
+        <CardImage src={item.snippet.thumbnails.medium.url} />
+        <CardBody>
+          <CardTitle as="h2">{item.snippet.title}</CardTitle>
+          <Paragraph>{item.snippet.description}</Paragraph>
+        </CardBody>
+      </Link>
     </CardLink>
   );
 };

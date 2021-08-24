@@ -13,8 +13,10 @@ function App() {
   const init = () => {
     return {
       search: 'wizeline',
-      showVideoDetails: false,
       theme: true,
+      isAuthenticated: false,
+      auth: {},
+      videoList: [],
     };
   };
   const [state, dispatch] = useReducer(appReducer, {}, init);

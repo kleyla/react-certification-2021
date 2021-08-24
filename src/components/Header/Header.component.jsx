@@ -1,10 +1,10 @@
 import React, { useContext, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
+
 import { AppContext } from '../../context/appContext';
 import { types } from '../../types/types';
 import Toggle from '../Toggle';
 import {
-  ButtonIcon,
   ButtonIconInput,
   Dropdown,
   Form,
@@ -15,11 +15,15 @@ import {
   Spacer,
   TextField,
 } from './Header.styled';
+import { firebase } from '../../firebase/firebase.config';
+import { Button } from '../UI';
 
 const Header = () => {
   const { state, dispatch } = useContext(AppContext);
   const [searchInput, setSearchInput] = useState(state.search);
   const [dropdown, setDropdown] = useState(false);
+  const { isAuthenticated } = state;
+  const history = useHistory();
 
   const handleSearch = (event) => {
     event.preventDefault();
@@ -33,11 +37,7 @@ const Header = () => {
         search: searchInput,
       },
     });
-    if (state.showVideoDetails) {
-      dispatch({
-        type: types.showVideoList,
-      });
-    }
+    history.push('/');
   };
 
   const handleToggle = () => {
@@ -50,13 +50,27 @@ const Header = () => {
     setDropdown((value) => !value);
   };
 
+  const handleLogout = () => {
+    firebase
+      .auth()
+      .signOut()
+      .then(() => {
+        dispatch({
+          type: types.logout,
+        });
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
+
   return (
     <Navbar>
       <Menu>
         <MenuItem>
-          <ButtonIcon>
-            <i className="fas fa-bars fa-lg" />
-          </ButtonIcon>
+          <Button icon>
+            <i className="fas fa-bars fa-2x" />
+          </Button>
         </MenuItem>
         <MenuItem>
           <Form onSubmit={handleSearch}>
@@ -80,18 +94,30 @@ const Header = () => {
         </HiddenDown>
         <HiddenDown on="md">
           <MenuItem>
-            <ButtonIcon onClick={handleDropdown}>
-              <i className="fas fa-user-circle fa-3x" />
-            </ButtonIcon>
+            <Button onClick={handleDropdown} header icon={!isAuthenticated}>
+              <i className="fas fa-user-circle fa-2x" />
+              {isAuthenticated && <span>{state.auth.email}</span>}
+            </Button>
             {dropdown && (
               <Dropdown>
                 <Menu column>
-                  <MenuItem dropdown>
-                    <Link to="/login">Iniciar session</Link>
-                  </MenuItem>
-                  <MenuItem dropdown>
-                    <Link to="/login">Favoritos</Link>
-                  </MenuItem>
+                  {isAuthenticated ? (
+                    <>
+                      <MenuItem dropdown noLink>
+                        Welcome!
+                      </MenuItem>
+                      <Link to="/favorites">
+                        <MenuItem dropdown>Favoritos</MenuItem>
+                      </Link>
+                      <MenuItem dropdown onClick={handleLogout}>
+                        Logout
+                      </MenuItem>
+                    </>
+                  ) : (
+                    <Link to="/login">
+                      <MenuItem dropdown>Iniciar session</MenuItem>
+                    </Link>
+                  )}
                 </Menu>
               </Dropdown>
             )}

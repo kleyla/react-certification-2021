@@ -1,65 +1,34 @@
-import React, { useContext, useState } from 'react';
+import React from 'react';
 
-// import { useFetchVideos } from '../../utils/hooks/useFetchVideos';
+import { useFetchVideos } from '../../utils/hooks/useFetchVideos';
 import Card from '../Card';
-import VideoDetails from '../VideoDetails';
-import {
-  Container,
-  Loader,
-  Typography,
-  VideoList,
-  VideoListContainer,
-} from './Home.styled';
-import { AppContext } from '../../context/appContext';
-import { types } from '../../types/types';
+import { Typography } from './Home.styled';
+
+import { CardsContainer, Container, Loader } from '../UI';
+// import data from '../../mocks/youtube.json';
 
 const Home = () => {
-  const { state, dispatch } = useContext(AppContext);
-  const { showVideoDetails } = state;
-  // const { videoList, loading } = useFetchVideos();
-  const [videoSelected, setVideoSelected] = useState({});
+  const { videoList, loading, error } = useFetchVideos();
 
-  const videoList = [];
-  const loading = false;
-
-  const selectVideo = (video) => {
-    setVideoSelected(video);
-    if (!showVideoDetails) {
-      dispatch({
-        type: types.showVideoDetails,
-      });
-    }
-  };
+  // const videoList = data.items;
+  // const loading = false;
 
   return (
     <Container>
-      {showVideoDetails ? (
-        <VideoDetails
-          video={videoSelected}
-          videoList={videoList}
-          selectVideo={selectVideo}
-        />
-      ) : (
-        <VideoListContainer>
-          <Typography as="h2">Welcome to the Challenge!</Typography>
-          <VideoList>
-            {loading ? (
-              <Loader data-testid="loader" />
-            ) : (
-              videoList.map(
-                (item) =>
-                  item.id.kind === 'youtube#video' && (
-                    <Card
-                      key={item.id.videoId}
-                      item={item}
-                      onClick={() => selectVideo(item)}
-                    />
-                  )
+      <Typography as="h2">Welcome to the Challenge!</Typography>
+      <CardsContainer>
+        {loading ? (
+          <Loader data-testid="loader" />
+        ) : (
+          videoList.map(
+            (item) =>
+              item.id.kind === 'youtube#video' && (
+                <Card key={item.id.videoId} item={item} />
               )
-            )}
-          </VideoList>
-        </VideoListContainer>
-      )}
+          )
+        )}
+        {!loading && error && <span>{error}</span>}
+      </CardsContainer>
     </Container>
   );
 };
