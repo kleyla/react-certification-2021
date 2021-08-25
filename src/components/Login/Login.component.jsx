@@ -1,7 +1,6 @@
-import React, { useState, useContext } from 'react';
+import React, { useState } from 'react';
 import {
   CardLogin,
-  CardTitle,
   TextLabel,
   TextField,
   MenuItem,
@@ -9,10 +8,8 @@ import {
   CardContent,
   TextError,
 } from './Login.styled';
-import { firebase } from '../../firebase/firebase.config';
-import { AppContext } from '../../context/appContext';
-import { types } from '../../types/types';
-import { Button, Container, Loader } from '../UI';
+import { Button, Container, Loader, Typography } from '../UI';
+import { useAuth } from '../../utils/hooks/useAuth';
 
 const Login = () => {
   const initial = {
@@ -21,62 +18,21 @@ const Login = () => {
   };
   const [formValues, setFormValues] = useState(initial);
   const [showRegister, setShowRegister] = useState(false);
-  const { dispatch } = useContext(AppContext);
-  const [errorMessage, setErrorMessage] = useState('');
-  const [isLoading, setIsLoading] = useState(false);
+
+  const { register, login, isLoading, errorMessage } = useAuth();
 
   const handleInput = ({ target }) => {
     setFormValues({ ...formValues, [target.name]: target.value });
   };
 
-  const registerUser = (email, password) => {
-    firebase
-      .auth()
-      .createUserWithEmailAndPassword(email, password)
-      .then((userCredential) => {
-        // Signed in
-        const { user } = userCredential;
-        console.log('user', user);
-      })
-      .catch((error) => {
-        setIsLoading(false);
-        setErrorMessage(() => error.message);
-      });
-  };
-
-  const loginUser = (email, password) => {
-    firebase
-      .auth()
-      .signInWithEmailAndPassword(email, password)
-      .then((userCredential) => {
-        // Signed in
-        const { user } = userCredential;
-        dispatch({
-          type: types.auth,
-          payload: {
-            isAuthenticated: true,
-            auth: {
-              uid: user.uid,
-              email: user.email,
-            },
-          },
-        });
-      })
-      .catch((error) => {
-        setIsLoading(false);
-        setErrorMessage(() => error.message);
-      });
-  };
-
   const handleSubmit = (e) => {
     e.preventDefault();
-    setIsLoading(true);
 
     if (showRegister) {
-      registerUser(formValues.email, formValues.password);
+      register(formValues.email, formValues.password);
       return;
     }
-    loginUser(formValues.email, formValues.password);
+    login(formValues.email, formValues.password);
   };
 
   return (
@@ -95,7 +51,9 @@ const Login = () => {
           </CardHeader>
           <CardContent>
             <form onSubmit={handleSubmit} noValidate>
-              <CardTitle>{showRegister ? 'Register Form' : 'Login Form'}</CardTitle>
+              <Typography tagName="h3" center className="mt-2 mb-1">
+                {showRegister ? 'Register Form' : 'Login Form'}
+              </Typography>
               {errorMessage && <TextError>{errorMessage}</TextError>}
               <TextLabel htmlFor="email">
                 Email:

@@ -1,15 +1,22 @@
 import React from 'react';
-import { useFetchVideosById } from '../../utils/hooks/useFetchVideosById';
+
+import { useFavorites } from '../../utils/hooks/useFavorites';
 import Card from '../Card';
 import { CardsContainer, Container, Loader } from '../UI';
 
 const Favorites = () => {
-  const { videos, loading } = useFetchVideosById();
+  const { favoriteVideos, isLoading } = useFavorites();
 
   return (
     <Container>
-      <CardsContainer subtitle="Mis favorites">
-        {loading ? <Loader /> : videos.map((item) => <Card key={item} item={item} />)}
+      <CardsContainer subtitle="My favorites">
+        {isLoading ? (
+          <Loader />
+        ) : (
+          favoriteVideos.map((item) => (
+            <Card key={item} item={item} path={`/favorite/${item.id}`} />
+          ))
+        )}
       </CardsContainer>
     </Container>
   );

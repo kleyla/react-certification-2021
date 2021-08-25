@@ -2,9 +2,7 @@ import React from 'react';
 
 import { useFetchVideos } from '../../utils/hooks/useFetchVideos';
 import Card from '../Card';
-import { Typography } from './Home.styled';
-
-import { CardsContainer, Container, Loader } from '../UI';
+import { CardsContainer, Container, Loader, Typography } from '../UI';
 // import data from '../../mocks/youtube.json';
 
 const Home = () => {
@@ -15,7 +13,9 @@ const Home = () => {
 
   return (
     <Container>
-      <Typography as="h2">Welcome to the Challenge!</Typography>
+      <Typography tagName="h1" center weight="300" className="title py-1">
+        Welcome to the Challenge!
+      </Typography>
       <CardsContainer>
         {loading ? (
           <Loader data-testid="loader" />
@@ -23,7 +23,11 @@ const Home = () => {
           videoList.map(
             (item) =>
               item.id.kind === 'youtube#video' && (
-                <Card key={item.id.videoId} item={item} />
+                <Card
+                  key={item.id.videoId}
+                  item={item}
+                  path={`/video/${item.id.videoId}`}
+                />
               )
           )
         )}

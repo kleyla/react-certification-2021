@@ -44,10 +44,6 @@ export const CardContent = styled.div`
   padding: 0 24px 24px 24px;
 `;
 
-export const CardTitle = styled.h3`
-  text-align: center;
-  padding: 16px 0 8px 0;
-`;
 export const TextError = styled.div`
   color: red;
   font-size: 12px;

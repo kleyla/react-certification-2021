@@ -2,11 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { CardBody, CardImage, CardLink, CardTitle, Paragraph } from './Card.styled';
 
-const Card = ({ item, onClick }) => {
-  console.log(item);
+const Card = ({ item, path }) => {
   return (
-    <CardLink onClick={onClick}>
-      <Link to={item.id.videoId ? `/video/${item.id.videoId}` : `/video/${item.id}`}>
+    <CardLink>
+      <Link to={path}>
         <CardImage src={item.snippet.thumbnails.medium.url} />
         <CardBody>
           <CardTitle as="h2">{item.snippet.title}</CardTitle>

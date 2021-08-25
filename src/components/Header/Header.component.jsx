@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useRef, useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 
 import { AppContext } from '../../context/appContext';
@@ -15,8 +15,9 @@ import {
   Spacer,
   TextField,
 } from './Header.styled';
-import { firebase } from '../../firebase/firebase.config';
 import { Button } from '../UI';
+import { useOutsideClick } from '../../utils/hooks/useOutsideClick';
+import { useAuth } from '../../utils/hooks/useAuth';
 
 const Header = () => {
   const { state, dispatch } = useContext(AppContext);
@@ -24,6 +25,8 @@ const Header = () => {
   const [dropdown, setDropdown] = useState(false);
   const { isAuthenticated } = state;
   const history = useHistory();
+  const { logout } = useAuth();
+  const ref = useRef();
 
   const handleSearch = (event) => {
     event.preventDefault();
@@ -50,25 +53,15 @@ const Header = () => {
     setDropdown((value) => !value);
   };
 
-  const handleLogout = () => {
-    firebase
-      .auth()
-      .signOut()
-      .then(() => {
-        dispatch({
-          type: types.logout,
-        });
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  };
+  useOutsideClick(ref, () => {
+    if (dropdown) setDropdown(() => false);
+  });
 
   return (
     <Navbar>
       <Menu>
         <MenuItem>
-          <Button icon>
+          <Button icon header>
             <i className="fas fa-bars fa-2x" />
           </Button>
         </MenuItem>
@@ -99,7 +92,7 @@ const Header = () => {
               {isAuthenticated && <span>{state.auth.email}</span>}
             </Button>
             {dropdown && (
-              <Dropdown>
+              <Dropdown ref={ref}>
                 <Menu column>
                   {isAuthenticated ? (
                     <>
@@ -107,15 +100,15 @@ const Header = () => {
                         Welcome!
                       </MenuItem>
                       <Link to="/favorites">
-                        <MenuItem dropdown>Favoritos</MenuItem>
+                        <MenuItem dropdown>Favorites</MenuItem>
                       </Link>
-                      <MenuItem dropdown onClick={handleLogout}>
-                        Logout
+                      <MenuItem dropdown onClick={logout}>
+                        Log out
                       </MenuItem>
                     </>
                   ) : (
                     <Link to="/login">
-                      <MenuItem dropdown>Iniciar session</MenuItem>
+                      <MenuItem dropdown>Log in</MenuItem>
                     </Link>
                   )}
                 </Menu>

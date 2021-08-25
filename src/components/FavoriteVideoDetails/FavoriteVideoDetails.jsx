@@ -1,9 +1,7 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 
-import { AppContext } from '../../context/appContext';
 import { useFavorites } from '../../utils/hooks/useFavorites';
-import { useFetchVideoById } from '../../utils/hooks/useFetchVideoById';
 import {
   Button,
   Container,
@@ -17,16 +15,20 @@ import {
   Typography,
 } from '../UI';
 
-const VideoDetails = () => {
+const FavoriteVideoDetails = () => {
   const { id } = useParams();
-  const { state } = useContext(AppContext);
-  const { videoList } = state;
-  const { video, loading } = useFetchVideoById(id);
-  const { addFavorite, removeFavorite, isFavorite } = useFavorites();
+  const {
+    addFavorite,
+    removeFavorite,
+    isFavorite,
+    favoriteVideos,
+    videoSelected,
+    isLoading,
+  } = useFavorites(id);
 
   return (
     <Container>
-      {loading ? (
+      {isLoading ? (
         <Loader />
       ) : (
         <>
@@ -54,15 +56,19 @@ const VideoDetails = () => {
                   <i className="fas fa-star fa-lg" />
                 </Button>
               )}
-              <Typography tagName="h2" className="mb-1" weight="600">
-                {video.snippet.title}
-              </Typography>
-              <Typography tagName="p">{video.snippet.description}</Typography>
+              {videoSelected && (
+                <>
+                  <Typography tagName="h2" className="mb-1" weight="600">
+                    {videoSelected.snippet.title}
+                  </Typography>
+                  <Typography tagName="p">{videoSelected.snippet.description}</Typography>
+                </>
+              )}
             </GridItem>
             <GridItem xs={12} md={4}>
               <List>
-                {videoList.map((item) => (
-                  <Link key={item.id.videoId} to={`/video/${item.id.videoId}`}>
+                {favoriteVideos.map((item) => (
+                  <Link key={item.id} to={`/favorite/${item.id}`}>
                     <ListItem type="button">
                       <ListItemAvatar
                         src={item.snippet.thumbnails.medium.url}
@@ -86,4 +92,4 @@ const VideoDetails = () => {
   );
 };
 
-export default VideoDetails;
+export default FavoriteVideoDetails;

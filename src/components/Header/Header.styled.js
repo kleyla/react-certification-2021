@@ -128,7 +128,3 @@ export const Dropdown = styled.div`
   padding: 8px 0;
   color: ${(props) => props.theme.color};
 `;
-
-export const MenuColumn = styled.ul`
-  display: flex;
-`;
