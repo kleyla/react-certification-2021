@@ -16,7 +16,16 @@ export const useAuth = () => {
       .then((userCredential) => {
         // Signed in
         const { user } = userCredential;
-        console.log('user', user);
+        dispatch({
+          type: types.auth,
+          payload: {
+            isAuthenticated: true,
+            auth: {
+              uid: user.uid,
+              email: user.email,
+            },
+          },
+        });
       })
       .catch((error) => {
         setIsLoading(false);
