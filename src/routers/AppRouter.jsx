@@ -1,7 +1,8 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { Switch, Redirect, Route } from 'react-router-dom';
-import Favorites from '../components/Favorites';
 
+import Favorites from '../components/Favorites';
+import FavoriteVideoDetails from '../components/FavoriteVideoDetails';
 import Home from '../components/Home/Home.component';
 import Login from '../components/Login/Login.component';
 import VideoDetails from '../components/VideoDetails';
@@ -51,7 +52,7 @@ export const AppRouter = () => {
       />
       <PrivateRoute
         isAuthenticated={isLoggedIn}
-        component={VideoDetails}
+        component={FavoriteVideoDetails}
         path="/favorite/:id"
         exact
       />
