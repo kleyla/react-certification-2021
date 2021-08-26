@@ -1,23 +1,38 @@
 import React from 'react';
 import { fireEvent, render, screen } from '@testing-library/react';
+import { ThemeProvider } from 'styled-components';
+import { HashRouter } from 'react-router-dom';
 
 import Header from '../index';
 import { AppContext } from '../../../context/appContext';
+import { GlobalStyles } from '../../../GlobalStyles.styled';
+import { AppRouter } from '../../../routers/AppRouter';
+import { darkTheme, lightTheme } from '../../../theming';
 
 describe('Testing Header component', () => {
+  const initialState = {
+    search: 'wizeline',
+    theme: true,
+    isAuthenticated: false,
+    auth: {},
+    videoList: [],
+  };
   const contextValue = {
     dispatch: jest.fn(),
-    state: {
-      search: 'wizeline',
-      showVideoDetails: false,
-    },
+    state: initialState,
   };
   let tree;
 
   beforeEach(() => {
     tree = render(
       <AppContext.Provider value={contextValue}>
-        <Header />
+        <ThemeProvider theme={initialState.theme ? lightTheme : darkTheme}>
+          <GlobalStyles />
+          <HashRouter>
+            <AppRouter />
+            <Header />
+          </HashRouter>
+        </ThemeProvider>
       </AppContext.Provider>
     );
   });

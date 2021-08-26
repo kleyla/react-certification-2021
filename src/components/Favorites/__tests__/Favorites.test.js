@@ -8,14 +8,21 @@ import { AppContext } from '../../../context/appContext';
 import { darkTheme, lightTheme } from '../../../theming';
 import { GlobalStyles } from '../../../GlobalStyles.styled';
 import { AppRouter } from '../../../routers/AppRouter';
+import data from '../../../mocks/youtube.json';
 
 describe('Testing Favorites component', () => {
+  const videos = data.items.filter((item) => {
+    return item.id.kind === 'youtube#video';
+  });
   const initialState = {
     search: 'wizeline',
     theme: true,
-    isAuthenticated: false,
-    auth: {},
-    videoList: [],
+    isAuthenticated: true,
+    auth: {
+      uid: '123123123',
+      email: 'example@gmail.com',
+    },
+    videoList: videos,
   };
   const contextValue = {
     dispatch: jest.fn(),

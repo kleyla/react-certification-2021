@@ -31,19 +31,33 @@ export const ButtonStyled = styled.button`
       align-items: center;
       justify-content: center;`}
 
-${(props) => {
-    if (props.color === 'primary') return `background-color: ${props.theme.btn.primary};`;
-    if (props.color === 'info') return `background-color: ${props.theme.btn.info};`;
-    if (props.color === 'success') return `background-color: ${props.theme.btn.success};`;
+  ${(props) => {
+    switch (props.color) {
+      case 'primary':
+        return `background-color: ${props.theme.btn.primary};`;
+      case 'info':
+        return `background-color: ${props.theme.btn.info};`;
+      case 'success':
+        return `background-color: ${props.theme.btn.success};`;
+      default:
+        break;
+    }
   }}
 
-${(props) => {
-    if (props.size === 'small') return `font-size: 10px;`;
-    if (props.size === 'medium') return ``;
-    if (props.size === 'large') return `padding: 14px; font-size: 16px;`;
+  ${(props) => {
+    switch (props.size) {
+      case 'small':
+        return `font-size: 10px;`;
+      case 'medium':
+        return;
+      case 'large':
+        return `padding: 14px; font-size: 16px;`;
+      default:
+        break;
+    }
   }}
 
-&:hover {
+  &:hover {
     ${({ icon, theme }) => !icon && `box-shadow: ${theme.card.btnShadow};`}
 
     transform: translateY(-1px);

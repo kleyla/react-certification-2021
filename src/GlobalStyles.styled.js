@@ -47,4 +47,7 @@ export const GlobalStyles = createGlobalStyle`
     .mr-1{
         margin-right: 8px;
     }
+    .text-error{
+        color: red;
+    }
 `;

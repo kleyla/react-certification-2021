@@ -1,99 +1,51 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Testing FavoriteVideoDetails component should match snapshot 1`] = `
+exports[`Testing Toggle component should to take snapshop 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div
-        class="sc-bdnxRM hCekCk"
+      <button
+        class="sc-bdnxRM dnipmA"
+        color="primary"
+        data-testid="button"
       >
-        <div>
-          <h2
-            center="true"
-            class="sc-iqAclL kzBsSq title py-1"
-            weight="300"
-          >
-            Welcome to the Challenge!
-          </h2>
-          <div
-            class="sc-eCApnc fuNLsN"
-          >
-            <div
-              class="sc-jSFjdj MLUyO"
-            >
-              <div
-                class="sc-gtsrHT kbMUr"
-              >
-                <div
-                  class="sc-dlnjwi gRGBfx"
-                  data-testid="loader"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        class="sc-bdnxRM hCekCk"
+        Submit
+      </button>
+      <button
+        class="sc-bdnxRM bRpMxD"
+        color="info"
       >
-        <div>
-          <div
-            class="sc-gtsrHT kbMUr"
-          >
-            <div
-              class="sc-dlnjwi gRGBfx"
-              data-testid="loader"
-            />
-          </div>
-        </div>
-      </div>
+        Submit
+      </button>
+      <button
+        class="sc-bdnxRM ZLgrt"
+        color="success"
+      >
+        Submit
+      </button>
     </div>
   </body>,
   "container": <div>
-    <div
-      class="sc-bdnxRM hCekCk"
+    <button
+      class="sc-bdnxRM dnipmA"
+      color="primary"
+      data-testid="button"
     >
-      <div>
-        <h2
-          center="true"
-          class="sc-iqAclL kzBsSq title py-1"
-          weight="300"
-        >
-          Welcome to the Challenge!
-        </h2>
-        <div
-          class="sc-eCApnc fuNLsN"
-        >
-          <div
-            class="sc-jSFjdj MLUyO"
-          >
-            <div
-              class="sc-gtsrHT kbMUr"
-            >
-              <div
-                class="sc-dlnjwi gRGBfx"
-                data-testid="loader"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      class="sc-bdnxRM hCekCk"
+      Submit
+    </button>
+    <button
+      class="sc-bdnxRM bRpMxD"
+      color="info"
     >
-      <div>
-        <div
-          class="sc-gtsrHT kbMUr"
-        >
-          <div
-            class="sc-dlnjwi gRGBfx"
-            data-testid="loader"
-          />
-        </div>
-      </div>
-    </div>
+      Submit
+    </button>
+    <button
+      class="sc-bdnxRM ZLgrt"
+      color="success"
+    >
+      Submit
+    </button>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

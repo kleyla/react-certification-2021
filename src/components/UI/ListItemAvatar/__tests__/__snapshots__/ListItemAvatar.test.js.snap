@@ -1,57 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Testing Toggle component should to take snapshop 1`] = `
+exports[`Testing ListItemAvatar component should to take snapshop 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div
-        class="sc-crzoAE kUFfJh"
-      >
-        <p
-          class="sc-iqAclL louGTn mr-1"
-          header="true"
-        >
-          Dark mode
-        </p>
-        <label
-          class="sc-dIsUp cEcrGb"
-        >
-          <input
-            checked=""
-            data-testid="toggle"
-            type="checkbox"
-          />
-          <span
-            class="sc-bqGGPW eQBPTd"
-          />
-        </label>
-      </div>
+      <img
+        class="sc-bdnxRM fjvBEt"
+      />
     </div>
   </body>,
   "container": <div>
-    <div
-      class="sc-crzoAE kUFfJh"
-    >
-      <p
-        class="sc-iqAclL louGTn mr-1"
-        header="true"
-      >
-        Dark mode
-      </p>
-      <label
-        class="sc-dIsUp cEcrGb"
-      >
-        <input
-          checked=""
-          data-testid="toggle"
-          type="checkbox"
-        />
-        <span
-          class="sc-bqGGPW eQBPTd"
-        />
-      </label>
-    </div>
+    <img
+      class="sc-bdnxRM fjvBEt"
+    />
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

@@ -9,14 +9,18 @@ import VideoDetails from '../index';
 import { GlobalStyles } from '../../../GlobalStyles.styled';
 import { AppRouter } from '../../../routers/AppRouter';
 import { darkTheme, lightTheme } from '../../../theming';
+import data from '../../../mocks/youtube.json';
 
 describe('Testing VideoDetails', () => {
+  const videos = data.items.filter((item) => {
+    return item.id.kind === 'youtube#video';
+  });
   const initialState = {
     search: 'wizeline',
     theme: true,
     isAuthenticated: false,
     auth: {},
-    videoList: [],
+    videoList: videos,
   };
   const contextValue = {
     dispatch: jest.fn(),

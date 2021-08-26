@@ -13,6 +13,7 @@ const Toggle = ({ text, checked, setChecked }) => {
           type="checkbox"
           checked={checked}
           onChange={(e) => setChecked(e.target.checked)}
+          data-testid="toggle"
         />
         <SliderRound dark={checked} />
       </ToggleSwitch>

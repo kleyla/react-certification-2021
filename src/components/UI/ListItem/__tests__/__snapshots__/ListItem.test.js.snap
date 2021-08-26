@@ -1,98 +1,30 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Testing FavoriteVideoDetails component should match snapshot 1`] = `
+exports[`Testing ListItem component should to take snapshop 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="sc-bdnxRM hCekCk"
+        class="sc-bdnxRM dblHeY"
       >
-        <div>
-          <h2
-            center="true"
-            class="sc-iqAclL kzBsSq title py-1"
-            weight="300"
-          >
-            Welcome to the Challenge!
-          </h2>
-          <div
-            class="sc-eCApnc fuNLsN"
-          >
-            <div
-              class="sc-jSFjdj MLUyO"
-            >
-              <div
-                class="sc-gtsrHT kbMUr"
-              >
-                <div
-                  class="sc-dlnjwi gRGBfx"
-                  data-testid="loader"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        class="sc-bdnxRM hCekCk"
-      >
-        <div>
-          <div
-            class="sc-gtsrHT kbMUr"
-          >
-            <div
-              class="sc-dlnjwi gRGBfx"
-              data-testid="loader"
-            />
-          </div>
-        </div>
+        <a
+          href="/"
+        >
+          Some
+        </a>
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="sc-bdnxRM hCekCk"
+      class="sc-bdnxRM dblHeY"
     >
-      <div>
-        <h2
-          center="true"
-          class="sc-iqAclL kzBsSq title py-1"
-          weight="300"
-        >
-          Welcome to the Challenge!
-        </h2>
-        <div
-          class="sc-eCApnc fuNLsN"
-        >
-          <div
-            class="sc-jSFjdj MLUyO"
-          >
-            <div
-              class="sc-gtsrHT kbMUr"
-            >
-              <div
-                class="sc-dlnjwi gRGBfx"
-                data-testid="loader"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      class="sc-bdnxRM hCekCk"
-    >
-      <div>
-        <div
-          class="sc-gtsrHT kbMUr"
-        >
-          <div
-            class="sc-dlnjwi gRGBfx"
-            data-testid="loader"
-          />
-        </div>
-      </div>
+      <a
+        href="/"
+      >
+        Some
+      </a>
     </div>
   </div>,
   "debug": [Function],

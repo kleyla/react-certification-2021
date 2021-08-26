@@ -9,11 +9,14 @@ export const GridItemStyled = styled.div`
 
   @media only screen and (min-width: 960px) {
     ${({ md }) => {
-      if (md === 8) return `width: 70%`;
-    }}
-
-    ${({ md }) => {
-      if (md === 4) return `width: 30%; margin-left: 24px;`;
+      switch (md) {
+        case 8:
+          return `width: 70%`;
+        case 4:
+          return `width: 30%; margin-left: 24px;`;
+        default:
+          break;
+      }
     }}
   }
 `;
