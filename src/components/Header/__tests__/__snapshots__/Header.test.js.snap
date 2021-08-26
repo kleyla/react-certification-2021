@@ -30,6 +30,7 @@ Object {
                   data-testid="loader"
                 />
               </div>
+              
             </div>
           </div>
         </div>
@@ -153,6 +154,7 @@ Object {
                 data-testid="loader"
               />
             </div>
+            
           </div>
         </div>
       </div>
