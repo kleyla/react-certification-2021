@@ -2,7 +2,13 @@ import { types } from '../../types/types';
 import { appReducer } from '../appReducer';
 
 describe('Testing appReducer', () => {
-  const initialState = { search: 'wizeline', showVideoDetails: false };
+  const initialState = {
+    search: 'wizeline',
+    theme: true,
+    isAuthenticated: false,
+    auth: {},
+    videoList: [],
+  };
 
   it('should return the initial state', () => {
     const state = appReducer(initialState, {});
@@ -17,22 +23,26 @@ describe('Testing appReducer', () => {
       },
     };
     const state = appReducer(initialState, action);
-    expect(state).toEqual({ search: 'react js', showVideoDetails: false });
+    expect(state).toEqual({
+      search: 'react js',
+      theme: true,
+      isAuthenticated: false,
+      auth: {},
+      videoList: [],
+    });
   });
 
-  it('should update showVideoDetails to true', () => {
+  it('should update theme to false', () => {
     const action = {
-      type: types.showVideoDetails,
+      type: types.theme,
     };
     const state = appReducer(initialState, action);
-    expect(state).toEqual({ search: 'wizeline', showVideoDetails: true });
-  });
-
-  it('should update showVideoDetails to false', () => {
-    const action = {
-      type: types.showVideoList,
-    };
-    const state = appReducer(initialState, action);
-    expect(state).toEqual({ search: 'wizeline', showVideoDetails: false });
+    expect(state).toEqual({
+      search: 'wizeline',
+      theme: false,
+      isAuthenticated: false,
+      auth: {},
+      videoList: [],
+    });
   });
 });

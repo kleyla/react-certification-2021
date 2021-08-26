@@ -9,7 +9,7 @@ export const useFetchVideoById = (id) => {
     setLoading(true);
     try {
       const response = await fetch(
-        `https://www.googleapis.com/youtube/v3/videos?key=${process.env.REACT_APP_YOUTUBE_API_KEY}&type=video&part=snippet&id=xE_rMj35BIM&`
+        `https://www.googleapis.com/youtube/v3/videos?key=${process.env.REACT_APP_YOUTUBE_API_KEY}&type=video&part=snippet&id=${id}`
       );
       const resp = await response.json();
       if (resp.error) {

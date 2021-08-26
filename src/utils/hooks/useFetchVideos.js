@@ -40,5 +40,5 @@ export const useFetchVideos = () => {
     getFromYoutube();
   }, [search]);
 
-  return { videoList, loading, error };
+  return { videoList, loading, error, getFromYoutube };
 };
