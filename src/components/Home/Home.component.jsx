@@ -31,7 +31,11 @@ const Home = () => {
               )
           )
         )}
-        {!loading && error && <span>{error}</span>}
+        {error && (
+          <Typography tagName="span" className="text-error">
+            {error}
+          </Typography>
+        )}
       </CardsContainer>
     </Container>
   );

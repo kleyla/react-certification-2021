@@ -2,10 +2,10 @@ import React from 'react';
 
 import { useFavorites } from '../../utils/hooks/useFavorites';
 import Card from '../Card';
-import { CardsContainer, Container, Loader } from '../UI';
+import { CardsContainer, Container, Loader, Typography } from '../UI';
 
 const Favorites = () => {
-  const { favoriteVideos, isLoading } = useFavorites();
+  const { favoriteVideos, isLoading, errorMessage } = useFavorites();
 
   return (
     <Container>
@@ -16,6 +16,11 @@ const Favorites = () => {
           favoriteVideos.map((item) => (
             <Card key={item} item={item} path={`/favorite/${item.id}`} />
           ))
+        )}
+        {errorMessage && (
+          <Typography tagName="span" className="text-error">
+            {errorMessage}
+          </Typography>
         )}
       </CardsContainer>
     </Container>

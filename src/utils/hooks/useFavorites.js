@@ -54,8 +54,12 @@ export const useFavorites = (idFav = '') => {
         `https://www.googleapis.com/youtube/v3/videos?key=${process.env.REACT_APP_YOUTUBE_API_KEY}&type=video&part=snippet&id=${favorites}`
       );
       const resp = await response.json();
-      setFavoriteVideos(resp.items);
-      getVideoSelected(resp.items);
+      if (resp.error) {
+        setErrorMessage(resp.error.message);
+      } else {
+        setFavoriteVideos(resp.items);
+        getVideoSelected(resp.items);
+      }
       setIsLoading(false);
     } catch (e) {
       setErrorMessage(e.message);
