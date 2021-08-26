@@ -1,16 +1,16 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { ThemeProvider } from 'styled-components';
 import { HashRouter } from 'react-router-dom';
+import { ThemeProvider } from 'styled-components';
 
 import { AppContext } from '../../../context/appContext';
-import VideoDetails from '../index';
-// import data from '../../../mocks/youtube.json';
-import { GlobalStyles } from '../../../GlobalStyles.styled';
+import FavoriteVideoDetails from '../index';
 import { AppRouter } from '../../../routers/AppRouter';
+import { GlobalStyles } from '../../../GlobalStyles.styled';
 import { darkTheme, lightTheme } from '../../../theming';
+// import data from '../../../mocks/youtube.json';
 
-describe('Testing VideoDetails', () => {
+describe('Testing FavoriteVideoDetails component', () => {
   const initialState = {
     search: 'wizeline',
     theme: true,
@@ -24,6 +24,14 @@ describe('Testing VideoDetails', () => {
   };
   let tree;
 
+  //   const videos = data.items.filter((item) => {
+  //     return item.id.kind === 'youtube#video';
+  //   });
+
+  //   const video = data.items[1];
+
+  //   const selectVideo = jest.fn();
+
   beforeEach(() => {
     tree = render(
       <AppContext.Provider value={contextValue}>
@@ -31,7 +39,7 @@ describe('Testing VideoDetails', () => {
           <GlobalStyles />
           <HashRouter>
             <AppRouter />
-            <VideoDetails />
+            <FavoriteVideoDetails />
           </HashRouter>
         </ThemeProvider>
       </AppContext.Provider>

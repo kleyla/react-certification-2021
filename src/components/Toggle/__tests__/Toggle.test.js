@@ -9,6 +9,7 @@ describe('Testing Toggle component', () => {
   const tree = render(
     <Toggle text="Dark mode" checked={checked} setChecked={setChecked} />
   );
+
   it('should to take snapshop', () => {
     expect(tree).toMatchSnapshot();
   });

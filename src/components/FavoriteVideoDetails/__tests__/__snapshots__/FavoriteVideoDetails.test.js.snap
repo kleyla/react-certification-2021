@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Testing VideoDetails should match snapshot 1`] = `
+exports[`Testing FavoriteVideoDetails component should match snapshot 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>

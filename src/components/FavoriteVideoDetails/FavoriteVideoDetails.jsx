@@ -29,7 +29,7 @@ const FavoriteVideoDetails = () => {
   return (
     <Container>
       {isLoading ? (
-        <Loader />
+        <Loader data-testid="loader" />
       ) : (
         <>
           <Grid container>

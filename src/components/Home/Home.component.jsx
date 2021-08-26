@@ -13,7 +13,7 @@ const Home = () => {
 
   return (
     <Container>
-      <Typography tagName="h1" center weight="300" className="title py-1">
+      <Typography tagName="h2" weight="300" center="true" className="title py-1">
         Welcome to the Challenge!
       </Typography>
       <CardsContainer>

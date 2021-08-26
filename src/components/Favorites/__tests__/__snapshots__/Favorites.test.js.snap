@@ -1,32 +1,32 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Testing VideoDetails should match snapshot 1`] = `
+exports[`Testing Favorites component should take a snapshop 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="sc-bdnxRM hCekCk"
+        class="sc-jSFjdj bNEmGo"
       >
         <div>
           <h2
             center="true"
-            class="sc-iqAclL kEpptS title py-1"
+            class="sc-hBMUJo fdQKmf title py-1"
             weight="300"
           >
             Welcome to the Challenge!
           </h2>
           <div
-            class="sc-eCApnc fuNLsN"
+            class="sc-pNWdM bwqMTH"
           >
             <div
-              class="sc-jSFjdj MLUyO"
+              class="sc-jrsJWt fZykTn"
             >
               <div
-                class="sc-gtsrHT kbMUr"
+                class="sc-gKAaRy lgmLbC"
               >
                 <div
-                  class="sc-dlnjwi gRGBfx"
+                  class="sc-iCoGMd SSGno"
                   data-testid="loader"
                 />
               </div>
@@ -35,16 +35,27 @@ Object {
         </div>
       </div>
       <div
-        class="sc-bdnxRM hCekCk"
+        class="sc-jSFjdj bNEmGo"
       >
         <div>
           <div
-            class="sc-gtsrHT kbMUr"
+            class="sc-pNWdM bwqMTH"
           >
+            <h3>
+              My favorites
+            </h3>
             <div
-              class="sc-dlnjwi gRGBfx"
-              data-testid="loader"
-            />
+              class="sc-jrsJWt fZykTn"
+            >
+              <div
+                class="sc-gKAaRy lgmLbC"
+              >
+                <div
+                  class="sc-iCoGMd SSGno"
+                  data-testid="loader"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -52,27 +63,27 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-bdnxRM hCekCk"
+      class="sc-jSFjdj bNEmGo"
     >
       <div>
         <h2
           center="true"
-          class="sc-iqAclL kEpptS title py-1"
+          class="sc-hBMUJo fdQKmf title py-1"
           weight="300"
         >
           Welcome to the Challenge!
         </h2>
         <div
-          class="sc-eCApnc fuNLsN"
+          class="sc-pNWdM bwqMTH"
         >
           <div
-            class="sc-jSFjdj MLUyO"
+            class="sc-jrsJWt fZykTn"
           >
             <div
-              class="sc-gtsrHT kbMUr"
+              class="sc-gKAaRy lgmLbC"
             >
               <div
-                class="sc-dlnjwi gRGBfx"
+                class="sc-iCoGMd SSGno"
                 data-testid="loader"
               />
             </div>
@@ -81,16 +92,27 @@ Object {
       </div>
     </div>
     <div
-      class="sc-bdnxRM hCekCk"
+      class="sc-jSFjdj bNEmGo"
     >
       <div>
         <div
-          class="sc-gtsrHT kbMUr"
+          class="sc-pNWdM bwqMTH"
         >
+          <h3>
+            My favorites
+          </h3>
           <div
-            class="sc-dlnjwi gRGBfx"
-            data-testid="loader"
-          />
+            class="sc-jrsJWt fZykTn"
+          >
+            <div
+              class="sc-gKAaRy lgmLbC"
+            >
+              <div
+                class="sc-iCoGMd SSGno"
+                data-testid="loader"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>

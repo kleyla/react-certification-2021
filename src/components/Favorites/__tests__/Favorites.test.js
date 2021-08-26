@@ -3,14 +3,13 @@ import { render } from '@testing-library/react';
 import { ThemeProvider } from 'styled-components';
 import { HashRouter } from 'react-router-dom';
 
+import Favorites from '../index';
 import { AppContext } from '../../../context/appContext';
-import VideoDetails from '../index';
-// import data from '../../../mocks/youtube.json';
+import { darkTheme, lightTheme } from '../../../theming';
 import { GlobalStyles } from '../../../GlobalStyles.styled';
 import { AppRouter } from '../../../routers/AppRouter';
-import { darkTheme, lightTheme } from '../../../theming';
 
-describe('Testing VideoDetails', () => {
+describe('Testing Favorites component', () => {
   const initialState = {
     search: 'wizeline',
     theme: true,
@@ -31,14 +30,14 @@ describe('Testing VideoDetails', () => {
           <GlobalStyles />
           <HashRouter>
             <AppRouter />
-            <VideoDetails />
+            <Favorites />
           </HashRouter>
         </ThemeProvider>
       </AppContext.Provider>
     );
   });
 
-  it('should match snapshot', () => {
+  it('should take a snapshop', () => {
     expect(tree).toMatchSnapshot();
   });
 });

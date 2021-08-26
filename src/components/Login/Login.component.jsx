@@ -38,7 +38,7 @@ const Login = () => {
   return (
     <Container center>
       {isLoading ? (
-        <Loader />
+        <Loader data-testid="loader" />
       ) : (
         <CardLogin>
           <CardHeader>
@@ -51,7 +51,7 @@ const Login = () => {
           </CardHeader>
           <CardContent>
             <form onSubmit={handleSubmit} noValidate>
-              <Typography tagName="h3" center className="mt-2 mb-1">
+              <Typography tagName="h3" center="true" className="mt-2 mb-1">
                 {showRegister ? 'Register Form' : 'Login Form'}
               </Typography>
               {errorMessage && <TextError>{errorMessage}</TextError>}

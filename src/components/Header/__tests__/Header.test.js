@@ -12,9 +12,10 @@ describe('Testing Header component', () => {
       showVideoDetails: false,
     },
   };
+  let tree;
 
   beforeEach(() => {
-    render(
+    tree = render(
       <AppContext.Provider value={contextValue}>
         <Header />
       </AppContext.Provider>
@@ -22,7 +23,7 @@ describe('Testing Header component', () => {
   });
 
   it('should take a snapshop', () => {
-    expect(screen).toMatchSnapshot();
+    expect(tree).toMatchSnapshot();
   });
 
   it('should be text "Dark mode"', () => {

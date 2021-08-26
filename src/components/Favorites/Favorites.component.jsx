@@ -11,7 +11,7 @@ const Favorites = () => {
     <Container>
       <CardsContainer subtitle="My favorites">
         {isLoading ? (
-          <Loader />
+          <Loader data-testid="loader" />
         ) : (
           favoriteVideos.map((item) => (
             <Card key={item} item={item} path={`/favorite/${item.id}`} />

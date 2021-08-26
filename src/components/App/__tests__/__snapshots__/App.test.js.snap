@@ -6,30 +6,30 @@ Object {
   "baseElement": <body>
     <div>
       <nav
-        class="sc-bkbkJK kDLClw"
+        class="sc-eCApnc eRTRuF"
       >
         <ul
-          class="sc-iemWCZ hBWRUy"
+          class="sc-jSFjdj dsJPny"
         >
           <li
-            class="sc-dIvrsQ dsAgBF"
+            class="sc-gKAaRy hKcdfX"
           >
             <button
-              class="sc-fKgJPI fKEpZV"
+              class="sc-ksluID hikfVZ"
             >
               <i
-                class="fas fa-bars fa-lg"
+                class="fas fa-bars fa-2x"
               />
             </button>
           </li>
           <li
-            class="sc-dIvrsQ dsAgBF"
+            class="sc-gKAaRy hKcdfX"
           >
             <form
-              class="sc-dlMDgC itdfBp"
+              class="sc-fujyAs jgUeTi"
             >
               <button
-                class="sc-kfYoZR ecmnxK"
+                class="sc-pNWdM eAAEIR"
                 type="submit"
               >
                 <i
@@ -37,7 +37,7 @@ Object {
                 />
               </button>
               <input
-                class="sc-bCwfaz cLlPND"
+                class="sc-jrsJWt fksNle"
                 placeholder="Search"
                 type="text"
                 value="wizeline"
@@ -45,49 +45,49 @@ Object {
             </form>
           </li>
           <div
-            class="sc-hHEiqL bMJSTK"
+            class="sc-iCoGMd itDCGY"
           />
           <div
-            class="sc-iwajpm eAhjvl"
+            class="sc-kEqXSa jjDVFg"
             on="md"
           >
             <li
-              class="sc-dIvrsQ dsAgBF"
+              class="sc-gKAaRy hKcdfX"
             >
               <div
-                class="sc-ksluID kJEHch"
+                class="sc-bdnxRM hFrJuC"
               >
                 <p
-                  class="sc-fFSPTT efmUnI"
+                  class="sc-hKFxyN SUEDR"
                 >
                   Dark mode
                 </p>
                 <label
-                  class="sc-hBMUJo ihzRLP"
+                  class="sc-gtsrHT iezsSu"
                 >
                   <input
                     checked=""
                     type="checkbox"
                   />
                   <span
-                    class="sc-fnVZcZ inGabQ"
+                    class="sc-dlnjwi lhktTD"
                   />
                 </label>
               </div>
             </li>
           </div>
           <div
-            class="sc-iwajpm eAhjvl"
+            class="sc-kEqXSa jjDVFg"
             on="md"
           >
             <li
-              class="sc-dIvrsQ dsAgBF"
+              class="sc-gKAaRy hKcdfX"
             >
               <button
-                class="sc-fKgJPI fKEpZV"
+                class="sc-ksluID hikfVZ"
               >
                 <i
-                  class="fas fa-user-circle fa-3x"
+                  class="fas fa-user-circle fa-2x"
                 />
               </button>
             </li>
@@ -95,23 +95,31 @@ Object {
         </ul>
       </nav>
       <div
-        class="sc-kEqXSa bdllAS"
+        class="sc-crzoAE gXJmKf"
       >
-        <div
-          class="sc-iqAclL bRimEs"
-        >
+        <div>
           <h2
-            class="sc-dIsUp eNHUoE"
+            center="true"
+            class="sc-kfYoZR bvYVRf title py-1"
+            weight="300"
           >
             Welcome to the Challenge!
           </h2>
           <div
-            class="sc-crzoAE cVwAaF"
+            class="sc-hBMUJo jiMoPE"
           >
             <div
-              class="sc-bqGGPW gndsnd"
-              data-testid="loader"
-            />
+              class="sc-fnVZcZ iXSIfk"
+            >
+              <div
+                class="sc-dIsUp QbBYK"
+              >
+                <div
+                  class="sc-bqGGPW gGWzsv"
+                  data-testid="loader"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -119,30 +127,30 @@ Object {
   </body>,
   "container": <div>
     <nav
-      class="sc-bkbkJK kDLClw"
+      class="sc-eCApnc eRTRuF"
     >
       <ul
-        class="sc-iemWCZ hBWRUy"
+        class="sc-jSFjdj dsJPny"
       >
         <li
-          class="sc-dIvrsQ dsAgBF"
+          class="sc-gKAaRy hKcdfX"
         >
           <button
-            class="sc-fKgJPI fKEpZV"
+            class="sc-ksluID hikfVZ"
           >
             <i
-              class="fas fa-bars fa-lg"
+              class="fas fa-bars fa-2x"
             />
           </button>
         </li>
         <li
-          class="sc-dIvrsQ dsAgBF"
+          class="sc-gKAaRy hKcdfX"
         >
           <form
-            class="sc-dlMDgC itdfBp"
+            class="sc-fujyAs jgUeTi"
           >
             <button
-              class="sc-kfYoZR ecmnxK"
+              class="sc-pNWdM eAAEIR"
               type="submit"
             >
               <i
@@ -150,7 +158,7 @@ Object {
               />
             </button>
             <input
-              class="sc-bCwfaz cLlPND"
+              class="sc-jrsJWt fksNle"
               placeholder="Search"
               type="text"
               value="wizeline"
@@ -158,49 +166,49 @@ Object {
           </form>
         </li>
         <div
-          class="sc-hHEiqL bMJSTK"
+          class="sc-iCoGMd itDCGY"
         />
         <div
-          class="sc-iwajpm eAhjvl"
+          class="sc-kEqXSa jjDVFg"
           on="md"
         >
           <li
-            class="sc-dIvrsQ dsAgBF"
+            class="sc-gKAaRy hKcdfX"
           >
             <div
-              class="sc-ksluID kJEHch"
+              class="sc-bdnxRM hFrJuC"
             >
               <p
-                class="sc-fFSPTT efmUnI"
+                class="sc-hKFxyN SUEDR"
               >
                 Dark mode
               </p>
               <label
-                class="sc-hBMUJo ihzRLP"
+                class="sc-gtsrHT iezsSu"
               >
                 <input
                   checked=""
                   type="checkbox"
                 />
                 <span
-                  class="sc-fnVZcZ inGabQ"
+                  class="sc-dlnjwi lhktTD"
                 />
               </label>
             </div>
           </li>
         </div>
         <div
-          class="sc-iwajpm eAhjvl"
+          class="sc-kEqXSa jjDVFg"
           on="md"
         >
           <li
-            class="sc-dIvrsQ dsAgBF"
+            class="sc-gKAaRy hKcdfX"
           >
             <button
-              class="sc-fKgJPI fKEpZV"
+              class="sc-ksluID hikfVZ"
             >
               <i
-                class="fas fa-user-circle fa-3x"
+                class="fas fa-user-circle fa-2x"
               />
             </button>
           </li>
@@ -208,23 +216,31 @@ Object {
       </ul>
     </nav>
     <div
-      class="sc-kEqXSa bdllAS"
+      class="sc-crzoAE gXJmKf"
     >
-      <div
-        class="sc-iqAclL bRimEs"
-      >
+      <div>
         <h2
-          class="sc-dIsUp eNHUoE"
+          center="true"
+          class="sc-kfYoZR bvYVRf title py-1"
+          weight="300"
         >
           Welcome to the Challenge!
         </h2>
         <div
-          class="sc-crzoAE cVwAaF"
+          class="sc-hBMUJo jiMoPE"
         >
           <div
-            class="sc-bqGGPW gndsnd"
-            data-testid="loader"
-          />
+            class="sc-fnVZcZ iXSIfk"
+          >
+            <div
+              class="sc-dIsUp QbBYK"
+            >
+              <div
+                class="sc-bqGGPW gGWzsv"
+                data-testid="loader"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>

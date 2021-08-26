@@ -1,0 +1,262 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Login component should take a snapshop 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="sc-iCoGMd cMlkwg"
+      >
+        <div>
+          <h2
+            center="true"
+            class="sc-fFSPTT jEsNwz title py-1"
+            weight="300"
+          >
+            Welcome to the Challenge!
+          </h2>
+          <div
+            class="sc-kEqXSa bXRorC"
+          >
+            <div
+              class="sc-iqAclL kdlvYr"
+            >
+              <div
+                class="sc-fujyAs fxVIrb"
+              >
+                <div
+                  class="sc-pNWdM khorAb"
+                  data-testid="loader"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="sc-iCoGMd FLRok"
+      >
+        <div>
+          <div
+            class="sc-bdnxRM ioJUKE"
+          >
+            <ul
+              class="sc-gtsrHT eluVUp"
+            >
+              <li
+                class="sc-dlnjwi jRVDvi"
+              >
+                Login
+              </li>
+              <li
+                class="sc-dlnjwi KvkCT"
+              >
+                Register
+              </li>
+            </ul>
+            <div
+              class="sc-hKFxyN gsblKA"
+            >
+              <form
+                novalidate=""
+              >
+                <h3
+                  center="true"
+                  class="sc-fFSPTT fzzaHz mt-2 mb-1"
+                >
+                  Login Form
+                </h3>
+                
+                <label
+                  class="sc-jSFjdj SzRKi"
+                  for="email"
+                >
+                  Email:
+                  <input
+                    class="sc-gKAaRy gJKjrP"
+                    name="email"
+                    placeholder="Email"
+                    type="email"
+                  />
+                </label>
+                <label
+                  class="sc-jSFjdj SzRKi"
+                  for="password"
+                >
+                  Password:
+                  <input
+                    class="sc-gKAaRy gJKjrP"
+                    name="password"
+                    placeholder="Password"
+                    type="password"
+                  />
+                </label>
+                <button
+                  class="sc-jrsJWt fhlVSS"
+                  color="primary"
+                  type="submit"
+                >
+                  Login
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="sc-iCoGMd cMlkwg"
+    >
+      <div>
+        <h2
+          center="true"
+          class="sc-fFSPTT jEsNwz title py-1"
+          weight="300"
+        >
+          Welcome to the Challenge!
+        </h2>
+        <div
+          class="sc-kEqXSa bXRorC"
+        >
+          <div
+            class="sc-iqAclL kdlvYr"
+          >
+            <div
+              class="sc-fujyAs fxVIrb"
+            >
+              <div
+                class="sc-pNWdM khorAb"
+                data-testid="loader"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="sc-iCoGMd FLRok"
+    >
+      <div>
+        <div
+          class="sc-bdnxRM ioJUKE"
+        >
+          <ul
+            class="sc-gtsrHT eluVUp"
+          >
+            <li
+              class="sc-dlnjwi jRVDvi"
+            >
+              Login
+            </li>
+            <li
+              class="sc-dlnjwi KvkCT"
+            >
+              Register
+            </li>
+          </ul>
+          <div
+            class="sc-hKFxyN gsblKA"
+          >
+            <form
+              novalidate=""
+            >
+              <h3
+                center="true"
+                class="sc-fFSPTT fzzaHz mt-2 mb-1"
+              >
+                Login Form
+              </h3>
+              
+              <label
+                class="sc-jSFjdj SzRKi"
+                for="email"
+              >
+                Email:
+                <input
+                  class="sc-gKAaRy gJKjrP"
+                  name="email"
+                  placeholder="Email"
+                  type="email"
+                />
+              </label>
+              <label
+                class="sc-jSFjdj SzRKi"
+                for="password"
+              >
+                Password:
+                <input
+                  class="sc-gKAaRy gJKjrP"
+                  name="password"
+                  placeholder="Password"
+                  type="password"
+                />
+              </label>
+              <button
+                class="sc-jrsJWt fhlVSS"
+                color="primary"
+                type="submit"
+              >
+                Login
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

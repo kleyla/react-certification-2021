@@ -27,7 +27,7 @@ const VideoDetails = () => {
   return (
     <Container>
       {loading ? (
-        <Loader />
+        <Loader data-testid="loader" />
       ) : (
         <>
           <Grid container>

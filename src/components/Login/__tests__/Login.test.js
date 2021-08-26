@@ -1,16 +1,15 @@
 import React from 'react';
-import { render } from '@testing-library/react';
-import { ThemeProvider } from 'styled-components';
+import { render, screen, fireEvent } from '@testing-library/react';
 import { HashRouter } from 'react-router-dom';
+import { ThemeProvider } from 'styled-components';
 
+import Login from '../index';
 import { AppContext } from '../../../context/appContext';
-import VideoDetails from '../index';
-// import data from '../../../mocks/youtube.json';
+import { darkTheme, lightTheme } from '../../../theming';
 import { GlobalStyles } from '../../../GlobalStyles.styled';
 import { AppRouter } from '../../../routers/AppRouter';
-import { darkTheme, lightTheme } from '../../../theming';
 
-describe('Testing VideoDetails', () => {
+describe('Testing Login component', () => {
   const initialState = {
     search: 'wizeline',
     theme: true,
@@ -20,7 +19,13 @@ describe('Testing VideoDetails', () => {
   };
   const contextValue = {
     dispatch: jest.fn(),
-    state: initialState,
+    state: {
+      search: 'wizeline',
+      theme: true,
+      isAuthenticated: false,
+      auth: {},
+      videoList: [],
+    },
   };
   let tree;
 
@@ -31,14 +36,21 @@ describe('Testing VideoDetails', () => {
           <GlobalStyles />
           <HashRouter>
             <AppRouter />
-            <VideoDetails />
+            <Login />
           </HashRouter>
         </ThemeProvider>
       </AppContext.Provider>
     );
   });
 
-  it('should match snapshot', () => {
+  it('should take a snapshop', () => {
     expect(tree).toMatchSnapshot();
+  });
+
+  it('should change input', () => {
+    const input = screen.getByPlaceholderText('Email');
+    fireEvent.change(input, { target: { value: 'example@gmail.com' } });
+
+    expect(input.value).toBe('example@gmail.com');
   });
 });
