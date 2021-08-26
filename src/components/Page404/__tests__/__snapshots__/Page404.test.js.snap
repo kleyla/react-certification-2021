@@ -1,54 +1,36 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Testing Toggle component should to take snapshop 1`] = `
+exports[`Testing Page404 component should take a snapshop 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="sc-crzoAE kUFfJh"
+        class="sc-bdnxRM kRrNSj"
       >
-        <p
-          class="sc-iqAclL louGTn mr-1"
-          header="true"
-        >
-          Dark mode
-        </p>
-        <label
-          class="sc-dIsUp cEcrGb"
-        >
-          <input
-            checked=""
-            type="checkbox"
-          />
-          <span
-            class="sc-bqGGPW eQBPTd"
-          />
-        </label>
+        <div>
+          <h3
+            center="true"
+            class="sc-iqAclL hLqJPB"
+          >
+            Page not found
+          </h3>
+        </div>
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="sc-crzoAE kUFfJh"
+      class="sc-bdnxRM kRrNSj"
     >
-      <p
-        class="sc-iqAclL louGTn mr-1"
-        header="true"
-      >
-        Dark mode
-      </p>
-      <label
-        class="sc-dIsUp cEcrGb"
-      >
-        <input
-          checked=""
-          type="checkbox"
-        />
-        <span
-          class="sc-bqGGPW eQBPTd"
-        />
-      </label>
+      <div>
+        <h3
+          center="true"
+          class="sc-iqAclL hLqJPB"
+        >
+          Page not found
+        </h3>
+      </div>
     </div>
   </div>,
   "debug": [Function],

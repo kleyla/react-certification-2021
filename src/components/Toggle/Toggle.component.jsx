@@ -1,10 +1,13 @@
 import React from 'react';
-import { SliderRound, ToggleContainer, ToggleSwitch, Typography } from './Toggle.styled';
+import { Typography } from '../UI';
+import { SliderRound, ToggleContainer, ToggleSwitch } from './Toggle.styled';
 
 const Toggle = ({ text, checked, setChecked }) => {
   return (
     <ToggleContainer>
-      <Typography>{text}</Typography>
+      <Typography tagName="p" className="mr-1" header="true">
+        {text}
+      </Typography>
       <ToggleSwitch>
         <input
           type="checkbox"

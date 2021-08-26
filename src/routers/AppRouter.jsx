@@ -5,6 +5,7 @@ import Favorites from '../components/Favorites';
 import FavoriteVideoDetails from '../components/FavoriteVideoDetails';
 import Home from '../components/Home/Home.component';
 import Login from '../components/Login/Login.component';
+import Page404 from '../components/Page404';
 import VideoDetails from '../components/VideoDetails';
 import { AppContext } from '../context/appContext';
 import { firebase } from '../firebase/firebase.config';
@@ -56,7 +57,8 @@ export const AppRouter = () => {
         path="/favorite/:id"
         exact
       />
-      <Redirect to="/" />
+      <Route path="/404" component={Page404} />
+      <Redirect to="/404" />
     </Switch>
   );
 };

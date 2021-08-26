@@ -44,7 +44,3 @@ export const SliderRound = styled.span`
     ${({ dark }) => dark && `transform: translateX(25px);`}
   }
 `;
-
-export const Typography = styled.p`
-  margin-right: 10px;
-`;

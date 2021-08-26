@@ -12,6 +12,8 @@ export const TypographyStyled = styled(Header)`
 
   ${({ center }) => center && `text-align: center;`}
 
+  ${({ header }) => header && `color: #fff;`}
+
   ${(props) =>
     props.tiny &&
     `font-size: 12px;

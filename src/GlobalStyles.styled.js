@@ -44,4 +44,7 @@ export const GlobalStyles = createGlobalStyle`
         padding-top: 8px;
         padding-bottom: 8px;
     }
+    .mr-1{
+        margin-right: 8px;
+    }
 `;
