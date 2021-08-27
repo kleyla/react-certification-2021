@@ -1,11 +1,17 @@
 import React from 'react';
-import { ContainerLoader, LoaderCircle } from './Loader.styled';
+import ReactDOM from 'react-dom';
 
-const Loader = (props) => {
-  return (
-    <ContainerLoader>
-      <LoaderCircle {...props} />
-    </ContainerLoader>
+import { ContainerLoader, LoaderCircle, ShadowContainer } from './Loader.styled';
+
+const Loader = ({ children, ...otherProps }) => {
+  return ReactDOM.createPortal(
+    <>
+      <ShadowContainer />
+      <ContainerLoader {...otherProps}>
+        <LoaderCircle />
+      </ContainerLoader>
+    </>,
+    document.getElementById('modal-root')
   );
 };
 

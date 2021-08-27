@@ -3,13 +3,12 @@ import React from 'react';
 import { useFetchVideos } from '../../utils/hooks/useFetchVideos';
 import Card from '../Card';
 import { CardsContainer, Container, Loader, Typography } from '../UI';
-// import data from '../../mocks/youtube.json';
 
 const Home = () => {
   const { videoList, loading, error } = useFetchVideos();
-
-  // const videoList = data.items;
-  // const loading = false;
+  // const videoList = [];
+  // const loading = true;
+  // const error = '';
 
   return (
     <Container>
