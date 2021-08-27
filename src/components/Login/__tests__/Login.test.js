@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import { render, screen, fireEvent } from '@testing-library/react';
 import { HashRouter } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
@@ -28,6 +29,16 @@ describe('Testing Login component', () => {
     },
   };
   let tree;
+
+  beforeAll(() => {
+    ReactDOM.createPortal = jest.fn((element) => {
+      return element;
+    });
+  });
+
+  afterEach(() => {
+    ReactDOM.createPortal.mockClear();
+  });
 
   beforeEach(() => {
     tree = render(

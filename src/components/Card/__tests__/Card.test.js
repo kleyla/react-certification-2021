@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import { render } from '@testing-library/react';
 import { ThemeProvider } from 'styled-components';
 import { HashRouter } from 'react-router-dom';
@@ -24,6 +25,16 @@ describe('Testing Card component', () => {
   };
   const item = data.items[1];
   let tree;
+
+  beforeAll(() => {
+    ReactDOM.createPortal = jest.fn((element) => {
+      return element;
+    });
+  });
+
+  afterEach(() => {
+    ReactDOM.createPortal.mockClear();
+  });
 
   beforeEach(() => {
     tree = render(

@@ -11,23 +11,26 @@ Object {
         <div>
           <h2
             center="true"
-            class="sc-fFSPTT csMCP title py-1"
+            class="sc-iemWCZ hsyMGv title py-1"
             weight="300"
           >
             Welcome to the Challenge!
           </h2>
           <div
-            class="sc-kEqXSa bXRorC"
+            class="sc-crzoAE ebjTvX"
           >
             <div
-              class="sc-iqAclL kdlvYr"
+              class="sc-dIsUp fFrSBm"
             >
               <div
-                class="sc-fujyAs fxVIrb"
+                class="sc-pNWdM hCqdrl"
+              />
+              <div
+                class="sc-jrsJWt kkAfPJ"
+                data-testid="loader"
               >
                 <div
-                  class="sc-pNWdM khorAb"
-                  data-testid="loader"
+                  class="sc-kEqXSa juaPy"
                 />
               </div>
               
@@ -64,7 +67,7 @@ Object {
               >
                 <h3
                   center="true"
-                  class="sc-fFSPTT gvQEzH mt-2 mb-1"
+                  class="sc-iemWCZ eaPdlT mt-2 mb-1"
                 >
                   Login Form
                 </h3>
@@ -94,7 +97,7 @@ Object {
                   />
                 </label>
                 <button
-                  class="sc-jrsJWt mCisK"
+                  class="sc-iqAclL gFdvnG"
                   color="primary"
                   type="submit"
                 >
@@ -114,23 +117,26 @@ Object {
       <div>
         <h2
           center="true"
-          class="sc-fFSPTT csMCP title py-1"
+          class="sc-iemWCZ hsyMGv title py-1"
           weight="300"
         >
           Welcome to the Challenge!
         </h2>
         <div
-          class="sc-kEqXSa bXRorC"
+          class="sc-crzoAE ebjTvX"
         >
           <div
-            class="sc-iqAclL kdlvYr"
+            class="sc-dIsUp fFrSBm"
           >
             <div
-              class="sc-fujyAs fxVIrb"
+              class="sc-pNWdM hCqdrl"
+            />
+            <div
+              class="sc-jrsJWt kkAfPJ"
+              data-testid="loader"
             >
               <div
-                class="sc-pNWdM khorAb"
-                data-testid="loader"
+                class="sc-kEqXSa juaPy"
               />
             </div>
             
@@ -167,7 +173,7 @@ Object {
             >
               <h3
                 center="true"
-                class="sc-fFSPTT gvQEzH mt-2 mb-1"
+                class="sc-iemWCZ eaPdlT mt-2 mb-1"
               >
                 Login Form
               </h3>
@@ -197,7 +203,7 @@ Object {
                 />
               </label>
               <button
-                class="sc-jrsJWt mCisK"
+                class="sc-iqAclL gFdvnG"
                 color="primary"
                 type="submit"
               >

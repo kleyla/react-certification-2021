@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import { fireEvent, render, screen } from '@testing-library/react';
 import { ThemeProvider } from 'styled-components';
 import { HashRouter } from 'react-router-dom';
@@ -22,6 +23,16 @@ describe('Testing Header component', () => {
     state: initialState,
   };
   let tree;
+
+  beforeAll(() => {
+    ReactDOM.createPortal = jest.fn((element) => {
+      return element;
+    });
+  });
+
+  afterEach(() => {
+    ReactDOM.createPortal.mockClear();
+  });
 
   beforeEach(() => {
     tree = render(

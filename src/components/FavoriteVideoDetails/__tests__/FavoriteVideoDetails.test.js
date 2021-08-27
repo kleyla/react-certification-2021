@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import { render } from '@testing-library/react';
 import { HashRouter } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
@@ -31,6 +32,16 @@ describe('Testing FavoriteVideoDetails component', () => {
   //   const video = data.items[1];
 
   //   const selectVideo = jest.fn();
+
+  beforeAll(() => {
+    ReactDOM.createPortal = jest.fn((element) => {
+      return element;
+    });
+  });
+
+  afterEach(() => {
+    ReactDOM.createPortal.mockClear();
+  });
 
   beforeEach(() => {
     tree = render(

@@ -11,23 +11,26 @@ Object {
         <div>
           <h2
             center="true"
-            class="sc-iqAclL kzBsSq title py-1"
+            class="sc-dIsUp iKVnoz title py-1"
             weight="300"
           >
             Welcome to the Challenge!
           </h2>
           <div
-            class="sc-eCApnc fuNLsN"
+            class="sc-gKAaRy gglYWI"
           >
             <div
-              class="sc-jSFjdj MLUyO"
+              class="sc-iCoGMd iiAeFS"
             >
               <div
-                class="sc-gtsrHT kbMUr"
+                class="sc-dlnjwi knNxSD"
+              />
+              <div
+                class="sc-hKFxyN fVhutZ"
+                data-testid="loader"
               >
                 <div
-                  class="sc-dlnjwi gRGBfx"
-                  data-testid="loader"
+                  class="sc-eCApnc icxlmd"
                 />
               </div>
               
@@ -40,11 +43,14 @@ Object {
       >
         <div>
           <div
-            class="sc-gtsrHT kbMUr"
+            class="sc-dlnjwi knNxSD"
+          />
+          <div
+            class="sc-hKFxyN fVhutZ"
+            data-testid="loader"
           >
             <div
-              class="sc-dlnjwi gRGBfx"
-              data-testid="loader"
+              class="sc-eCApnc icxlmd"
             />
           </div>
         </div>
@@ -58,23 +64,26 @@ Object {
       <div>
         <h2
           center="true"
-          class="sc-iqAclL kzBsSq title py-1"
+          class="sc-dIsUp iKVnoz title py-1"
           weight="300"
         >
           Welcome to the Challenge!
         </h2>
         <div
-          class="sc-eCApnc fuNLsN"
+          class="sc-gKAaRy gglYWI"
         >
           <div
-            class="sc-jSFjdj MLUyO"
+            class="sc-iCoGMd iiAeFS"
           >
             <div
-              class="sc-gtsrHT kbMUr"
+              class="sc-dlnjwi knNxSD"
+            />
+            <div
+              class="sc-hKFxyN fVhutZ"
+              data-testid="loader"
             >
               <div
-                class="sc-dlnjwi gRGBfx"
-                data-testid="loader"
+                class="sc-eCApnc icxlmd"
               />
             </div>
             
@@ -87,11 +96,14 @@ Object {
     >
       <div>
         <div
-          class="sc-gtsrHT kbMUr"
+          class="sc-dlnjwi knNxSD"
+        />
+        <div
+          class="sc-hKFxyN fVhutZ"
+          data-testid="loader"
         >
           <div
-            class="sc-dlnjwi gRGBfx"
-            data-testid="loader"
+            class="sc-eCApnc icxlmd"
           />
         </div>
       </div>

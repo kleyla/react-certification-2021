@@ -11,23 +11,26 @@ Object {
         <div>
           <h2
             center="true"
-            class="sc-hBMUJo hLupkv title py-1"
+            class="sc-fFSPTT csMCP title py-1"
             weight="300"
           >
             Welcome to the Challenge!
           </h2>
           <div
-            class="sc-pNWdM bwqMTH"
+            class="sc-kEqXSa bXRorC"
           >
             <div
-              class="sc-jrsJWt fZykTn"
+              class="sc-iqAclL kdlvYr"
             >
               <div
-                class="sc-gKAaRy lgmLbC"
+                class="sc-iCoGMd kUhiBi"
+              />
+              <div
+                class="sc-fujyAs kNyKeh"
+                data-testid="loader"
               >
                 <div
-                  class="sc-iCoGMd SSGno"
-                  data-testid="loader"
+                  class="sc-pNWdM khorAb"
                 />
               </div>
               
@@ -70,23 +73,26 @@ Object {
       <div>
         <h2
           center="true"
-          class="sc-hBMUJo hLupkv title py-1"
+          class="sc-fFSPTT csMCP title py-1"
           weight="300"
         >
           Welcome to the Challenge!
         </h2>
         <div
-          class="sc-pNWdM bwqMTH"
+          class="sc-kEqXSa bXRorC"
         >
           <div
-            class="sc-jrsJWt fZykTn"
+            class="sc-iqAclL kdlvYr"
           >
             <div
-              class="sc-gKAaRy lgmLbC"
+              class="sc-iCoGMd kUhiBi"
+            />
+            <div
+              class="sc-fujyAs kNyKeh"
+              data-testid="loader"
             >
               <div
-                class="sc-iCoGMd SSGno"
-                data-testid="loader"
+                class="sc-pNWdM khorAb"
               />
             </div>
             
