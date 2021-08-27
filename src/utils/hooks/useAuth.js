@@ -9,7 +9,7 @@ export const useAuth = () => {
   const [errorMessage, setErrorMessage] = useState('');
 
   const register = (email, password) => {
-    setIsLoading(() => true);
+    setIsLoading(true);
     firebase
       .auth()
       .createUserWithEmailAndPassword(email, password)
@@ -26,6 +26,7 @@ export const useAuth = () => {
             },
           },
         });
+        setIsLoading(false);
       })
       .catch((error) => {
         setIsLoading(false);
@@ -34,7 +35,7 @@ export const useAuth = () => {
   };
 
   const login = (email, password) => {
-    setIsLoading(() => true);
+    setIsLoading(true);
     firebase
       .auth()
       .signInWithEmailAndPassword(email, password)
@@ -51,6 +52,7 @@ export const useAuth = () => {
             },
           },
         });
+        setIsLoading(false);
       })
       .catch((error) => {
         setIsLoading(false);
@@ -68,7 +70,6 @@ export const useAuth = () => {
         });
       })
       .catch((error) => {
-        setIsLoading(false);
         setErrorMessage(() => error.message);
       });
   };
