@@ -1,4 +1,4 @@
-import { types } from '../../types/types';
+import Types from '../../types';
 import { appReducer } from '../appReducer';
 
 describe('Testing appReducer', () => {
@@ -17,7 +17,7 @@ describe('Testing appReducer', () => {
 
   it('should update search data', () => {
     const action = {
-      type: types.search,
+      type: Types.search,
       payload: {
         search: 'react js',
       },
@@ -34,7 +34,7 @@ describe('Testing appReducer', () => {
 
   it('should update theme to false', () => {
     const action = {
-      type: types.theme,
+      type: Types.theme,
     };
     const state = appReducer(initialState, action);
     expect(state).toEqual({

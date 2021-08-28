@@ -1,28 +1,28 @@
-import { types } from '../types/types';
+import Types from '../types';
 
 export const appReducer = (state = {}, action) => {
   switch (action.type) {
-    case types.search:
+    case Types.SEARCH:
       return {
         ...state,
         ...action.payload,
       };
-    case types.videoList:
+    case Types.VIDEO_LIST:
       return {
         ...state,
         ...action.payload,
       };
-    case types.theme:
+    case Types.THEME:
       return {
         ...state,
         theme: !state.theme,
       };
-    case types.auth:
+    case Types.AUTH:
       return {
         ...state,
         ...action.payload,
       };
-    case types.logout:
+    case Types.LOGOUT:
       return {
         ...state,
         isAuthenticated: false,
