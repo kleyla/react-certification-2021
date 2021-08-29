@@ -3,11 +3,12 @@ import React from 'react';
 import { useFetchVideos } from '../../utils/hooks/useFetchVideos';
 import Card from '../Card';
 import { CardsContainer, Container, Loader, Typography } from '../UI';
+// import data from '../../mocks/youtube.json';
 
 const Home = () => {
-  const { videoList, loading, error } = useFetchVideos();
-  // const videoList = [];
-  // const loading = true;
+  const { videos, loading, error } = useFetchVideos();
+  // const videos = data.items;
+  // const loading = false;
   // const error = '';
 
   return (
@@ -19,12 +20,14 @@ const Home = () => {
         {loading ? (
           <Loader data-testid="loader" />
         ) : (
-          videoList.map(
+          videos.map(
             (item) =>
               item.id.kind === 'youtube#video' && (
                 <Card
                   key={item.id.videoId}
-                  item={item}
+                  thumbnails={item.snippet.thumbnails.medium.url}
+                  title={item.snippet.title}
+                  description={item.snippet.description}
                   path={`/video/${item.id.videoId}`}
                 />
               )

@@ -2,7 +2,6 @@ import React, { useContext, useRef, useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 
 import { AppContext } from '../../context/appContext';
-import { types } from '../../types/types';
 import Toggle from '../Toggle';
 import {
   ButtonIconInput,
@@ -19,10 +18,13 @@ import { Button } from '../UI';
 import { useOutsideClick } from '../../utils/hooks/useOutsideClick';
 import { useAuth } from '../../utils/hooks/useAuth';
 
+import Login from '../Login';
+
 const Header = () => {
-  const { state, dispatch } = useContext(AppContext);
+  const { state, search, theme } = useContext(AppContext);
   const [searchInput, setSearchInput] = useState(state.search);
   const [dropdown, setDropdown] = useState(false);
+  const [openLoginModal, setOpenLoginModal] = useState(false);
   const { isAuthenticated } = state;
   const history = useHistory();
   const { logout } = useAuth();
@@ -34,31 +36,32 @@ const Header = () => {
       console.log('empty');
       return;
     }
-    dispatch({
-      type: types.search,
-      payload: {
-        search: searchInput,
-      },
+    search({
+      search: searchInput,
     });
     history.push('/');
   };
 
   const handleToggle = () => {
-    dispatch({
-      type: types.theme,
-    });
+    theme();
   };
 
   const handleDropdown = () => {
     setDropdown((value) => !value);
   };
 
+  const handleOpenModal = () => {
+    setOpenLoginModal(true);
+    setDropdown(false);
+  };
+
   useOutsideClick(ref, () => {
-    if (dropdown) setDropdown(() => false);
+    if (dropdown) setDropdown(false);
   });
 
   return (
     <Navbar>
+      {openLoginModal && !isAuthenticated && <Login setOpen={setOpenLoginModal} />}
       <Menu>
         <MenuItem>
           <Button icon header>
@@ -107,9 +110,11 @@ const Header = () => {
                       </MenuItem>
                     </>
                   ) : (
-                    <Link to="/login">
-                      <MenuItem dropdown>Log in</MenuItem>
-                    </Link>
+                    <>
+                      <MenuItem dropdown onClick={handleOpenModal}>
+                        Log in
+                      </MenuItem>
+                    </>
                   )}
                 </Menu>
               </Dropdown>

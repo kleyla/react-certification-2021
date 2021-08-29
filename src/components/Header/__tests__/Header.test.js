@@ -1,14 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { fireEvent, render, screen } from '@testing-library/react';
-import { ThemeProvider } from 'styled-components';
 import { HashRouter } from 'react-router-dom';
 
 import Header from '../index';
-import { AppContext } from '../../../context/appContext';
 import { GlobalStyles } from '../../../GlobalStyles.styled';
 import { AppRouter } from '../../../routers/AppRouter';
-import { darkTheme, lightTheme } from '../../../theming';
+import { ThemeProvider } from '../../../ThemeProvider';
+import { ContextWrapper } from '../../../context/ContextWrapper';
 
 describe('Testing Header component', () => {
   const initialState = {
@@ -36,15 +35,15 @@ describe('Testing Header component', () => {
 
   beforeEach(() => {
     tree = render(
-      <AppContext.Provider value={contextValue}>
-        <ThemeProvider theme={initialState.theme ? lightTheme : darkTheme}>
+      <ContextWrapper>
+        <ThemeProvider>
           <GlobalStyles />
           <HashRouter>
             <AppRouter />
             <Header />
           </HashRouter>
         </ThemeProvider>
-      </AppContext.Provider>
+      </ContextWrapper>
     );
   });
 

@@ -2,14 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { CardBody, CardImage, CardLink, CardTitle, Paragraph } from './Card.styled';
 
-const Card = ({ item, path }) => {
+const Card = ({ path, thumbnails, title, description }) => {
   return (
     <CardLink>
       <Link to={path}>
-        <CardImage src={item.snippet.thumbnails.medium.url} />
+        <CardImage src={thumbnails} />
         <CardBody>
-          <CardTitle as="h2">{item.snippet.title}</CardTitle>
-          <Paragraph>{item.snippet.description}</Paragraph>
+          <CardTitle as="h2">{title}</CardTitle>
+          <Paragraph>{description}</Paragraph>
         </CardBody>
       </Link>
     </CardLink>

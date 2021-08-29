@@ -1,9 +1,9 @@
 import React, { useContext } from 'react';
 import { Link, useParams } from 'react-router-dom';
-
 import { AppContext } from '../../context/appContext';
+
 import { useFavorites } from '../../utils/hooks/useFavorites';
-import { useFetchVideoById } from '../../utils/hooks/useFetchVideoById';
+import { useFetchVideos } from '../../utils/hooks/useFetchVideos';
 import {
   Button,
   Container,
@@ -20,8 +20,9 @@ import {
 const VideoDetails = () => {
   const { id } = useParams();
   const { state } = useContext(AppContext);
-  const { videoList } = state;
-  const { video, loading } = useFetchVideoById(id);
+  const { isAuthenticated } = state;
+
+  const { videos, loading, error, videoSelected } = useFetchVideos(id);
   const { addFavorite, removeFavorite, isFavorite } = useFavorites();
 
   return (
@@ -39,29 +40,47 @@ const VideoDetails = () => {
                 width="100%"
                 height="600px"
               />
-              {isFavorite(id) ? (
-                <Button
-                  icon
-                  color="success"
-                  onClick={() => removeFavorite(id)}
-                  className="mb-2"
-                >
-                  <i className="fas fa-star fa-lg" />
-                </Button>
-              ) : (
-                <Button color="info" onClick={() => addFavorite(id)} className="mb-2">
-                  <span>Add favorite</span>
-                  <i className="fas fa-star fa-lg" />
-                </Button>
+              {isAuthenticated &&
+                videoSelected.snippet &&
+                (isFavorite(id) ? (
+                  <Button
+                    icon
+                    color="success"
+                    onClick={() => removeFavorite(id)}
+                    className="mb-1"
+                  >
+                    <i className="fas fa-star fa-lg" />
+                  </Button>
+                ) : (
+                  <Button
+                    color="info"
+                    onClick={() =>
+                      addFavorite(
+                        id,
+                        videoSelected.snippet.title,
+                        videoSelected.snippet.description,
+                        videoSelected.snippet.thumbnails.medium.url,
+                        videoSelected.snippet.channelTitle
+                      )
+                    }
+                    className="mb-1"
+                  >
+                    <span>Add favorite</span>
+                    <i className="fas fa-star fa-lg" />
+                  </Button>
+                ))}
+              {videoSelected.snippet && (
+                <>
+                  <Typography tagName="h2" className="mb-1 mt-1" weight="600">
+                    {videoSelected.snippet.title}
+                  </Typography>
+                  <Typography tagName="p">{videoSelected.snippet.description}</Typography>
+                </>
               )}
-              <Typography tagName="h2" className="mb-1" weight="600">
-                {video.snippet.title}
-              </Typography>
-              <Typography tagName="p">{video.snippet.description}</Typography>
             </GridItem>
             <GridItem xs={12} md={4}>
               <List>
-                {videoList.map((item) => (
+                {videos.map((item) => (
                   <Link key={item.id.videoId} to={`/video/${item.id.videoId}`}>
                     <ListItem type="button">
                       <ListItemAvatar
@@ -70,7 +89,7 @@ const VideoDetails = () => {
                       />
                       <ListItemBody>
                         <Typography tagName="h5">{item.snippet.title}</Typography>
-                        <Typography tagName="p" tiny>
+                        <Typography tagName="p" tiny="true">
                           {item.snippet.channelTitle}
                         </Typography>
                       </ListItemBody>
@@ -80,6 +99,11 @@ const VideoDetails = () => {
               </List>
             </GridItem>
           </Grid>
+          {error && (
+            <Typography tagName="p" className="text-error">
+              {error}
+            </Typography>
+          )}
         </>
       )}
     </Container>

@@ -17,14 +17,12 @@ import {
 
 const FavoriteVideoDetails = () => {
   const { id } = useParams();
-  const {
-    addFavorite,
-    removeFavorite,
-    isFavorite,
-    favoriteVideos,
-    videoSelected,
-    isLoading,
-  } = useFavorites(id);
+  const { removeFavorite, isFavorite, favorites, videoSelected, isLoading } =
+    useFavorites(id);
+
+  const remove = () => {
+    removeFavorite(id);
+  };
 
   return (
     <Container>
@@ -41,43 +39,30 @@ const FavoriteVideoDetails = () => {
                 width="100%"
                 height="600px"
               />
-              {isFavorite(id) ? (
-                <Button
-                  icon
-                  color="success"
-                  onClick={() => removeFavorite(id)}
-                  className="mb-2"
-                >
-                  <i className="fas fa-star fa-lg" />
-                </Button>
-              ) : (
-                <Button color="info" onClick={() => addFavorite(id)} className="mb-2">
-                  <span>Add favorite</span>
+              {isFavorite(id) && (
+                <Button icon color="success" onClick={remove} className="mb-2">
                   <i className="fas fa-star fa-lg" />
                 </Button>
               )}
               {videoSelected && (
                 <>
                   <Typography tagName="h2" className="mb-1" weight="600">
-                    {videoSelected.snippet.title}
+                    {videoSelected.title}
                   </Typography>
-                  <Typography tagName="p">{videoSelected.snippet.description}</Typography>
+                  <Typography tagName="p">{videoSelected.description}</Typography>
                 </>
               )}
             </GridItem>
             <GridItem xs={12} md={4}>
               <List>
-                {favoriteVideos.map((item) => (
+                {favorites.map((item) => (
                   <Link key={item.id} to={`/favorite/${item.id}`}>
                     <ListItem type="button">
-                      <ListItemAvatar
-                        src={item.snippet.thumbnails.medium.url}
-                        alt={item.snippet.title}
-                      />
+                      <ListItemAvatar src={item.thumbnails} alt={item.title} />
                       <ListItemBody>
-                        <Typography tagName="h5">{item.snippet.title}</Typography>
-                        <Typography tagName="p" tiny>
-                          {item.snippet.channelTitle}
+                        <Typography tagName="h5">{item.title}</Typography>
+                        <Typography tagName="p" tiny="true">
+                          {item.channel}
                         </Typography>
                       </ListItemBody>
                     </ListItem>

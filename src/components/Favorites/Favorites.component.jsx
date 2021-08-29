@@ -2,10 +2,10 @@ import React from 'react';
 
 import { useFavorites } from '../../utils/hooks/useFavorites';
 import Card from '../Card';
-import { CardsContainer, Container, Loader, Typography } from '../UI';
+import { CardsContainer, Container, Loader } from '../UI';
 
 const Favorites = () => {
-  const { favoriteVideos, isLoading, errorMessage } = useFavorites();
+  const { favorites, isLoading } = useFavorites();
 
   return (
     <Container>
@@ -13,14 +13,15 @@ const Favorites = () => {
         {isLoading ? (
           <Loader data-testid="loader" />
         ) : (
-          favoriteVideos.map((item) => (
-            <Card key={item} item={item} path={`/favorite/${item.id}`} />
+          favorites.map((item) => (
+            <Card
+              key={item.id}
+              thumbnails={item.thumbnails}
+              title={item.title}
+              description={item.description}
+              path={`/favorite/${item.id}`}
+            />
           ))
-        )}
-        {errorMessage && (
-          <Typography tagName="span" className="text-error">
-            {errorMessage}
-          </Typography>
         )}
       </CardsContainer>
     </Container>

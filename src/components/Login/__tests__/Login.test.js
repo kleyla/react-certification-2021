@@ -2,32 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { render, screen, fireEvent } from '@testing-library/react';
 import { HashRouter } from 'react-router-dom';
-import { ThemeProvider } from 'styled-components';
 
 import Login from '../index';
-import { AppContext } from '../../../context/appContext';
-import { darkTheme, lightTheme } from '../../../theming';
 import { GlobalStyles } from '../../../GlobalStyles.styled';
 import { AppRouter } from '../../../routers/AppRouter';
+import { ContextWrapper } from '../../../context/ContextWrapper';
+import { ThemeProvider } from '../../../ThemeProvider';
 
 describe('Testing Login component', () => {
-  const initialState = {
-    search: 'wizeline',
-    theme: true,
-    isAuthenticated: false,
-    auth: {},
-    videoList: [],
-  };
-  const contextValue = {
-    dispatch: jest.fn(),
-    state: {
-      search: 'wizeline',
-      theme: true,
-      isAuthenticated: false,
-      auth: {},
-      videoList: [],
-    },
-  };
   let tree;
 
   beforeAll(() => {
@@ -42,15 +24,15 @@ describe('Testing Login component', () => {
 
   beforeEach(() => {
     tree = render(
-      <AppContext.Provider value={contextValue}>
-        <ThemeProvider theme={initialState.theme ? lightTheme : darkTheme}>
+      <ContextWrapper>
+        <ThemeProvider>
           <GlobalStyles />
           <HashRouter>
             <AppRouter />
             <Login />
           </HashRouter>
         </ThemeProvider>
-      </AppContext.Provider>
+      </ContextWrapper>
     );
   });
 

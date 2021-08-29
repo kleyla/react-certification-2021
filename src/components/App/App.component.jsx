@@ -1,36 +1,21 @@
-import React, { useReducer } from 'react';
+import React from 'react';
 import { HashRouter } from 'react-router-dom';
-import { ThemeProvider } from 'styled-components';
 
-import { AppContext } from '../../context/appContext';
-import { appReducer } from '../../context/appReducer';
-import { GlobalStyles } from '../../GlobalStyles.styled';
 import Header from '../Header';
-import { lightTheme, darkTheme } from '../../theming';
+import { ThemeProvider } from '../../ThemeProvider';
 import { AppRouter } from '../../routers/AppRouter';
+import { ContextWrapper } from '../../context/ContextWrapper';
 
 function App() {
-  const init = () => {
-    return {
-      search: 'wizeline',
-      theme: true,
-      isAuthenticated: false,
-      auth: {},
-      videoList: [],
-    };
-  };
-  const [state, dispatch] = useReducer(appReducer, {}, init);
-
   return (
-    <AppContext.Provider value={{ state, dispatch }}>
-      <ThemeProvider theme={state.theme ? lightTheme : darkTheme}>
-        <GlobalStyles />
+    <ContextWrapper>
+      <ThemeProvider>
         <HashRouter>
           <Header />
           <AppRouter />
         </HashRouter>
       </ThemeProvider>
-    </AppContext.Provider>
+    </ContextWrapper>
   );
 }
 

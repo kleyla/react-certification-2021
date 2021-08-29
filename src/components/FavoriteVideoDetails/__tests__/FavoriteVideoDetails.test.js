@@ -2,27 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { render } from '@testing-library/react';
 import { HashRouter } from 'react-router-dom';
-import { ThemeProvider } from 'styled-components';
 
-import { AppContext } from '../../../context/appContext';
 import FavoriteVideoDetails from '../index';
 import { AppRouter } from '../../../routers/AppRouter';
 import { GlobalStyles } from '../../../GlobalStyles.styled';
-import { darkTheme, lightTheme } from '../../../theming';
+import { ContextWrapper } from '../../../context/ContextWrapper';
+import { ThemeProvider } from '../../../ThemeProvider';
 // import data from '../../../mocks/youtube.json';
 
 describe('Testing FavoriteVideoDetails component', () => {
-  const initialState = {
-    search: 'wizeline',
-    theme: true,
-    isAuthenticated: false,
-    auth: {},
-    videoList: [],
-  };
-  const contextValue = {
-    dispatch: jest.fn(),
-    state: initialState,
-  };
   let tree;
 
   //   const videos = data.items.filter((item) => {
@@ -45,15 +33,15 @@ describe('Testing FavoriteVideoDetails component', () => {
 
   beforeEach(() => {
     tree = render(
-      <AppContext.Provider value={contextValue}>
-        <ThemeProvider theme={initialState.theme ? lightTheme : darkTheme}>
+      <ContextWrapper>
+        <ThemeProvider>
           <GlobalStyles />
           <HashRouter>
             <AppRouter />
             <FavoriteVideoDetails />
           </HashRouter>
         </ThemeProvider>
-      </AppContext.Provider>
+      </ContextWrapper>
     );
   });
 

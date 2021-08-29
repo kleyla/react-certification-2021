@@ -1,34 +1,33 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { render } from '@testing-library/react';
-import { ThemeProvider } from 'styled-components';
 import { HashRouter } from 'react-router-dom';
 
 import Favorites from '../index';
-import { AppContext } from '../../../context/appContext';
-import { darkTheme, lightTheme } from '../../../theming';
 import { GlobalStyles } from '../../../GlobalStyles.styled';
 import { AppRouter } from '../../../routers/AppRouter';
-import data from '../../../mocks/youtube.json';
+// import data from '../../../mocks/youtube.json';
+import { ThemeProvider } from '../../../ThemeProvider';
+import { ContextWrapper } from '../../../context/ContextWrapper';
 
 describe('Testing Favorites component', () => {
-  const videos = data.items.filter((item) => {
-    return item.id.kind === 'youtube#video';
-  });
-  const initialState = {
-    search: 'wizeline',
-    theme: true,
-    isAuthenticated: true,
-    auth: {
-      uid: '123123123',
-      email: 'example@gmail.com',
-    },
-    videoList: videos,
-  };
-  const contextValue = {
-    dispatch: jest.fn(),
-    state: initialState,
-  };
+  // const videos = data.items.filter((item) => {
+  //   return item.id.kind === 'youtube#video';
+  // });
+  // const initialState = {
+  //   search: 'wizeline',
+  //   theme: true,
+  //   isAuthenticated: true,
+  //   auth: {
+  //     uid: '123123123',
+  //     email: 'example@gmail.com',
+  //   },
+  //   videoList: videos,
+  // };
+  // const contextValue = {
+  //   dispatch: jest.fn(),
+  //   state: initialState,
+  // };
   let tree;
 
   beforeAll(() => {
@@ -43,15 +42,15 @@ describe('Testing Favorites component', () => {
 
   beforeEach(() => {
     tree = render(
-      <AppContext.Provider value={contextValue}>
-        <ThemeProvider theme={initialState.theme ? lightTheme : darkTheme}>
+      <ContextWrapper>
+        <ThemeProvider>
           <GlobalStyles />
           <HashRouter>
             <AppRouter />
             <Favorites />
           </HashRouter>
         </ThemeProvider>
-      </AppContext.Provider>
+      </ContextWrapper>
     );
   });
 

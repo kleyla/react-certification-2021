@@ -1,27 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { render } from '@testing-library/react';
-import { ThemeProvider } from 'styled-components';
 import { HashRouter } from 'react-router-dom';
 
 import Home from '../index';
-import { AppContext } from '../../../context/appContext';
-import { darkTheme, lightTheme } from '../../../theming';
 import { GlobalStyles } from '../../../GlobalStyles.styled';
 import { AppRouter } from '../../../routers/AppRouter';
+import { ThemeProvider } from '../../../ThemeProvider';
+import { ContextWrapper } from '../../../context/ContextWrapper';
 
 describe('Testing Home component', () => {
-  const initialState = {
-    search: 'wizeline',
-    theme: true,
-    isAuthenticated: false,
-    auth: {},
-    videoList: [],
-  };
-  const contextValue = {
-    dispatch: jest.fn(),
-    state: initialState,
-  };
   let tree;
 
   beforeAll(() => {
@@ -36,27 +24,19 @@ describe('Testing Home component', () => {
 
   beforeEach(() => {
     tree = render(
-      <AppContext.Provider value={contextValue}>
-        <ThemeProvider theme={initialState.theme ? lightTheme : darkTheme}>
+      <ContextWrapper>
+        <ThemeProvider>
           <GlobalStyles />
           <HashRouter>
             <AppRouter />
             <Home />
           </HashRouter>
         </ThemeProvider>
-      </AppContext.Provider>
+      </ContextWrapper>
     );
   });
 
   it('should take a snapshop', () => {
     expect(tree).toMatchSnapshot();
   });
-
-  // it('should ', async () => {
-  //   await act(async () => {
-  //     const { getByTestId } = screen;
-  //     await waitForElementToBeRemoved(() => getByTestId('loader'));
-  //     expect(screen.getByTestId('loader')).toBeFalsy();
-  //   });
-  // });
 });
