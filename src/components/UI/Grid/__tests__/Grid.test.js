@@ -3,7 +3,6 @@ import { render } from '@testing-library/react';
 import { ThemeProvider } from 'styled-components';
 
 import Grid from '../index';
-import { GlobalStyles } from '../../../../GlobalStyles.styled';
 import { darkTheme, lightTheme } from '../../../../ThemeProvider/values';
 
 describe('Testing Grid component', () => {
@@ -13,7 +12,6 @@ describe('Testing Grid component', () => {
   beforeEach(() => {
     tree = render(
       <ThemeProvider theme={theme ? lightTheme : darkTheme}>
-        <GlobalStyles />
         <Grid />
       </ThemeProvider>
     );

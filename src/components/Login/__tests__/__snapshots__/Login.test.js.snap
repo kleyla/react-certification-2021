@@ -11,26 +11,26 @@ Object {
         <div>
           <h2
             center="true"
-            class="sc-iemWCZ hsyMGv title py-1"
+            class="sc-bkbkJK gEhFRp title py-1"
             weight="300"
           >
             Welcome to the Challenge!
           </h2>
           <div
-            class="sc-crzoAE ebjTvX"
+            class="sc-iqAclL fyZLvl"
           >
             <div
-              class="sc-dIsUp fFrSBm"
+              class="sc-crzoAE frgrhx"
             >
               <div
-                class="sc-pNWdM hCqdrl"
+                class="sc-fujyAs fnXkHa"
               />
               <div
-                class="sc-jrsJWt kkAfPJ"
+                class="sc-pNWdM cpNcLq"
                 data-testid="loader"
               >
                 <div
-                  class="sc-kEqXSa juaPy"
+                  class="sc-jrsJWt eIQROR"
                 />
               </div>
               
@@ -39,117 +39,13 @@ Object {
         </div>
       </div>
       <div
-        class="sc-iCoGMd FLRok"
+        class="sc-fujyAs fnXkHa"
+      />
+      <div
+        class="sc-iemWCZ khupst"
       >
-        <div>
-          <div
-            class="sc-bdnxRM ioJUKE"
-          >
-            <ul
-              class="sc-gtsrHT eluVUp"
-            >
-              <li
-                class="sc-dlnjwi jRVDvi"
-              >
-                Login
-              </li>
-              <li
-                class="sc-dlnjwi KvkCT"
-              >
-                Register
-              </li>
-            </ul>
-            <div
-              class="sc-hKFxyN gsblKA"
-            >
-              <form
-                novalidate=""
-              >
-                <h3
-                  center="true"
-                  class="sc-iemWCZ eaPdlT mt-2 mb-1"
-                >
-                  Login Form
-                </h3>
-                
-                <label
-                  class="sc-jSFjdj SzRKi"
-                  for="email"
-                >
-                  Email:
-                  <input
-                    class="sc-gKAaRy gJKjrP"
-                    name="email"
-                    placeholder="Email"
-                    type="email"
-                  />
-                </label>
-                <label
-                  class="sc-jSFjdj SzRKi"
-                  for="password"
-                >
-                  Password:
-                  <input
-                    class="sc-gKAaRy gJKjrP"
-                    name="password"
-                    placeholder="Password"
-                    type="password"
-                  />
-                </label>
-                <button
-                  class="sc-iqAclL gFdvnG"
-                  color="primary"
-                  type="submit"
-                >
-                  Login
-                </button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>,
-  "container": <div>
-    <div
-      class="sc-iCoGMd cMlkwg"
-    >
-      <div>
-        <h2
-          center="true"
-          class="sc-iemWCZ hsyMGv title py-1"
-          weight="300"
-        >
-          Welcome to the Challenge!
-        </h2>
         <div
-          class="sc-crzoAE ebjTvX"
-        >
-          <div
-            class="sc-dIsUp fFrSBm"
-          >
-            <div
-              class="sc-pNWdM hCqdrl"
-            />
-            <div
-              class="sc-jrsJWt kkAfPJ"
-              data-testid="loader"
-            >
-              <div
-                class="sc-kEqXSa juaPy"
-              />
-            </div>
-            
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      class="sc-iCoGMd FLRok"
-    >
-      <div>
-        <div
-          class="sc-bdnxRM ioJUKE"
+          class="sc-bdnxRM gSDCjF"
         >
           <ul
             class="sc-gtsrHT eluVUp"
@@ -173,7 +69,7 @@ Object {
             >
               <h3
                 center="true"
-                class="sc-iemWCZ eaPdlT mt-2 mb-1"
+                class="sc-bkbkJK gsKmWx mt-2 mb-1"
               >
                 Login Form
               </h3>
@@ -203,7 +99,7 @@ Object {
                 />
               </label>
               <button
-                class="sc-iqAclL gFdvnG"
+                class="sc-kEqXSa dWullV"
                 color="primary"
                 type="submit"
               >
@@ -211,6 +107,112 @@ Object {
               </button>
             </form>
           </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="sc-iCoGMd cMlkwg"
+    >
+      <div>
+        <h2
+          center="true"
+          class="sc-bkbkJK gEhFRp title py-1"
+          weight="300"
+        >
+          Welcome to the Challenge!
+        </h2>
+        <div
+          class="sc-iqAclL fyZLvl"
+        >
+          <div
+            class="sc-crzoAE frgrhx"
+          >
+            <div
+              class="sc-fujyAs fnXkHa"
+            />
+            <div
+              class="sc-pNWdM cpNcLq"
+              data-testid="loader"
+            >
+              <div
+                class="sc-jrsJWt eIQROR"
+              />
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="sc-fujyAs fnXkHa"
+    />
+    <div
+      class="sc-iemWCZ khupst"
+    >
+      <div
+        class="sc-bdnxRM gSDCjF"
+      >
+        <ul
+          class="sc-gtsrHT eluVUp"
+        >
+          <li
+            class="sc-dlnjwi jRVDvi"
+          >
+            Login
+          </li>
+          <li
+            class="sc-dlnjwi KvkCT"
+          >
+            Register
+          </li>
+        </ul>
+        <div
+          class="sc-hKFxyN gsblKA"
+        >
+          <form
+            novalidate=""
+          >
+            <h3
+              center="true"
+              class="sc-bkbkJK gsKmWx mt-2 mb-1"
+            >
+              Login Form
+            </h3>
+            
+            <label
+              class="sc-jSFjdj SzRKi"
+              for="email"
+            >
+              Email:
+              <input
+                class="sc-gKAaRy gJKjrP"
+                name="email"
+                placeholder="Email"
+                type="email"
+              />
+            </label>
+            <label
+              class="sc-jSFjdj SzRKi"
+              for="password"
+            >
+              Password:
+              <input
+                class="sc-gKAaRy gJKjrP"
+                name="password"
+                placeholder="Password"
+                type="password"
+              />
+            </label>
+            <button
+              class="sc-kEqXSa dWullV"
+              color="primary"
+              type="submit"
+            >
+              Login
+            </button>
+          </form>
         </div>
       </div>
     </div>

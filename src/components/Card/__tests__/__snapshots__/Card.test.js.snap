@@ -11,26 +11,26 @@ Object {
         <div>
           <h2
             center="true"
-            class="sc-fFSPTT csMCP title py-1"
+            class="sc-fnVZcZ dGikfd title py-1"
             weight="300"
           >
             Welcome to the Challenge!
           </h2>
           <div
-            class="sc-kEqXSa bXRorC"
+            class="sc-jrsJWt ilckdl"
           >
             <div
-              class="sc-iqAclL kdlvYr"
+              class="sc-kEqXSa bcSwdQ"
             >
               <div
-                class="sc-iCoGMd kUhiBi"
+                class="sc-gKAaRy keqjFf"
               />
               <div
-                class="sc-fujyAs kNyKeh"
+                class="sc-iCoGMd jBuUdd"
                 data-testid="loader"
               >
                 <div
-                  class="sc-pNWdM khorAb"
+                  class="sc-fujyAs deZEUZ"
                 />
               </div>
               
@@ -45,22 +45,17 @@ Object {
           href="#/favorite/[object Object]"
         >
           <div
-            class="sc-gtsrHT hYsIYV"
-            src="https://i.ytimg.com/vi/nmXMgqjQzls/mqdefault.jpg"
+            class="sc-gtsrHT jlwwnM"
           />
           <div
             class="sc-eCApnc dLzmhV"
           >
             <h2
               class="sc-dlnjwi bpTXXq"
-            >
-              Video Tour | Welcome to Wizeline Guadalajara
-            </h2>
+            />
             <p
               class="sc-hKFxyN knykUX"
-            >
-              Follow Hector Padilla, Wizeline Director of Engineering, for a lively tour of our office. In 2018, Wizeline opened its stunning new office in Guadalajara, Jalisco, ...
-            </p>
+            />
           </div>
         </a>
       </button>
@@ -73,26 +68,26 @@ Object {
       <div>
         <h2
           center="true"
-          class="sc-fFSPTT csMCP title py-1"
+          class="sc-fnVZcZ dGikfd title py-1"
           weight="300"
         >
           Welcome to the Challenge!
         </h2>
         <div
-          class="sc-kEqXSa bXRorC"
+          class="sc-jrsJWt ilckdl"
         >
           <div
-            class="sc-iqAclL kdlvYr"
+            class="sc-kEqXSa bcSwdQ"
           >
             <div
-              class="sc-iCoGMd kUhiBi"
+              class="sc-gKAaRy keqjFf"
             />
             <div
-              class="sc-fujyAs kNyKeh"
+              class="sc-iCoGMd jBuUdd"
               data-testid="loader"
             >
               <div
-                class="sc-pNWdM khorAb"
+                class="sc-fujyAs deZEUZ"
               />
             </div>
             
@@ -107,22 +102,17 @@ Object {
         href="#/favorite/[object Object]"
       >
         <div
-          class="sc-gtsrHT hYsIYV"
-          src="https://i.ytimg.com/vi/nmXMgqjQzls/mqdefault.jpg"
+          class="sc-gtsrHT jlwwnM"
         />
         <div
           class="sc-eCApnc dLzmhV"
         >
           <h2
             class="sc-dlnjwi bpTXXq"
-          >
-            Video Tour | Welcome to Wizeline Guadalajara
-          </h2>
+          />
           <p
             class="sc-hKFxyN knykUX"
-          >
-            Follow Hector Padilla, Wizeline Director of Engineering, for a lively tour of our office. In 2018, Wizeline opened its stunning new office in Guadalajara, Jalisco, ...
-          </p>
+          />
         </div>
       </a>
     </button>

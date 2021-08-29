@@ -4,7 +4,6 @@ import { render } from '@testing-library/react';
 import { HashRouter } from 'react-router-dom';
 
 import Home from '../index';
-import { GlobalStyles } from '../../../GlobalStyles.styled';
 import { AppRouter } from '../../../routers/AppRouter';
 import { ThemeProvider } from '../../../ThemeProvider';
 import { ContextWrapper } from '../../../context/ContextWrapper';
@@ -26,7 +25,6 @@ describe('Testing Home component', () => {
     tree = render(
       <ContextWrapper>
         <ThemeProvider>
-          <GlobalStyles />
           <HashRouter>
             <AppRouter />
             <Home />

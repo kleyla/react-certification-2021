@@ -5,7 +5,6 @@ import { HashRouter } from 'react-router-dom';
 
 import VideoDetails from '../index';
 // import data from '../../../mocks/youtube.json';
-import { GlobalStyles } from '../../../GlobalStyles.styled';
 import { AppRouter } from '../../../routers/AppRouter';
 import { ContextWrapper } from '../../../context/ContextWrapper';
 import { ThemeProvider } from '../../../ThemeProvider';
@@ -31,7 +30,6 @@ describe('Testing VideoDetails', () => {
     tree = render(
       <ContextWrapper>
         <ThemeProvider>
-          <GlobalStyles />
           <HashRouter>
             <AppRouter />
             <VideoDetails />

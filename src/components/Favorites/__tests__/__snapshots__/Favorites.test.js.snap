@@ -11,26 +11,26 @@ Object {
         <div>
           <h2
             center="true"
-            class="sc-fFSPTT csMCP title py-1"
+            class="sc-fnVZcZ dGikfd title py-1"
             weight="300"
           >
             Welcome to the Challenge!
           </h2>
           <div
-            class="sc-kEqXSa bXRorC"
+            class="sc-jrsJWt ilckdl"
           >
             <div
-              class="sc-iqAclL kdlvYr"
+              class="sc-kEqXSa bcSwdQ"
             >
               <div
-                class="sc-iCoGMd kUhiBi"
+                class="sc-gKAaRy keqjFf"
               />
               <div
-                class="sc-fujyAs kNyKeh"
+                class="sc-iCoGMd jBuUdd"
                 data-testid="loader"
               >
                 <div
-                  class="sc-pNWdM khorAb"
+                  class="sc-fujyAs deZEUZ"
                 />
               </div>
               
@@ -43,27 +43,14 @@ Object {
       >
         <div>
           <div
-            class="sc-kEqXSa bXRorC"
+            class="sc-jrsJWt ilckdl"
           >
             <h3>
               My favorites
             </h3>
             <div
-              class="sc-iqAclL kdlvYr"
-            >
-              <div
-                class="sc-iCoGMd kUhiBi"
-              />
-              <div
-                class="sc-fujyAs kNyKeh"
-                data-testid="loader"
-              >
-                <div
-                  class="sc-pNWdM khorAb"
-                />
-              </div>
-              
-            </div>
+              class="sc-kEqXSa bcSwdQ"
+            />
           </div>
         </div>
       </div>
@@ -76,26 +63,26 @@ Object {
       <div>
         <h2
           center="true"
-          class="sc-fFSPTT csMCP title py-1"
+          class="sc-fnVZcZ dGikfd title py-1"
           weight="300"
         >
           Welcome to the Challenge!
         </h2>
         <div
-          class="sc-kEqXSa bXRorC"
+          class="sc-jrsJWt ilckdl"
         >
           <div
-            class="sc-iqAclL kdlvYr"
+            class="sc-kEqXSa bcSwdQ"
           >
             <div
-              class="sc-iCoGMd kUhiBi"
+              class="sc-gKAaRy keqjFf"
             />
             <div
-              class="sc-fujyAs kNyKeh"
+              class="sc-iCoGMd jBuUdd"
               data-testid="loader"
             >
               <div
-                class="sc-pNWdM khorAb"
+                class="sc-fujyAs deZEUZ"
               />
             </div>
             
@@ -108,27 +95,14 @@ Object {
     >
       <div>
         <div
-          class="sc-kEqXSa bXRorC"
+          class="sc-jrsJWt ilckdl"
         >
           <h3>
             My favorites
           </h3>
           <div
-            class="sc-iqAclL kdlvYr"
-          >
-            <div
-              class="sc-iCoGMd kUhiBi"
-            />
-            <div
-              class="sc-fujyAs kNyKeh"
-              data-testid="loader"
-            >
-              <div
-                class="sc-pNWdM khorAb"
-              />
-            </div>
-            
-          </div>
+            class="sc-kEqXSa bcSwdQ"
+          />
         </div>
       </div>
     </div>

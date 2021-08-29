@@ -13,4 +13,8 @@ describe('Testing Page404 component', () => {
   it('should take a snapshop', () => {
     expect(tree).toMatchSnapshot();
   });
+
+  it('should take a snapshop', () => {
+    expect(tree.getByText('Page not found').tagName).toBe('H3');
+  });
 });

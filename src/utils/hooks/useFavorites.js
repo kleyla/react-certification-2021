@@ -49,17 +49,14 @@ export const useFavorites = (idFav = '') => {
   }, [idFav, favorites]);
 
   useEffect(() => {
-    console.log('getFavorites solo una vez');
     getFavorites();
   }, [getFavorites]);
 
   useEffect(() => {
-    console.log('updatelocalStorage cada vez que se agregue o elimine un favorito');
     updatelocalStorage();
   }, [updatelocalStorage]);
 
   useEffect(() => {
-    console.log('getVideoSelected');
     getVideoSelected();
   }, [getVideoSelected]);
 

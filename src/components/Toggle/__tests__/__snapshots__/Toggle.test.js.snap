@@ -6,16 +6,16 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-bqGGPW lfAGUV"
+        class="sc-ksluID kJEHch"
       >
         <p
-          class="sc-dIsUp bjlyua mr-1"
+          class="sc-crzoAE doxncZ mr-1"
           header="true"
         >
           Dark mode
         </p>
         <label
-          class="sc-ksluID hDkYZQ"
+          class="sc-hBMUJo ihzRLP"
         >
           <input
             checked=""
@@ -23,7 +23,7 @@ Object {
             type="checkbox"
           />
           <span
-            class="sc-hBMUJo gNrvMS"
+            class="sc-fnVZcZ inGabQ"
           />
         </label>
       </div>
@@ -31,16 +31,16 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-bqGGPW lfAGUV"
+      class="sc-ksluID kJEHch"
     >
       <p
-        class="sc-dIsUp bjlyua mr-1"
+        class="sc-crzoAE doxncZ mr-1"
         header="true"
       >
         Dark mode
       </p>
       <label
-        class="sc-ksluID hDkYZQ"
+        class="sc-hBMUJo ihzRLP"
       >
         <input
           checked=""
@@ -48,7 +48,7 @@ Object {
           type="checkbox"
         />
         <span
-          class="sc-hBMUJo gNrvMS"
+          class="sc-fnVZcZ inGabQ"
         />
       </label>
     </div>

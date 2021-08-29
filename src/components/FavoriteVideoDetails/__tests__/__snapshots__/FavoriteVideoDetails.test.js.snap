@@ -11,26 +11,26 @@ Object {
         <div>
           <h2
             center="true"
-            class="sc-dIsUp iKVnoz title py-1"
+            class="sc-crzoAE gNzgsY title py-1"
             weight="300"
           >
             Welcome to the Challenge!
           </h2>
           <div
-            class="sc-gKAaRy gglYWI"
+            class="sc-jSFjdj eUsWzQ"
           >
             <div
-              class="sc-iCoGMd iiAeFS"
+              class="sc-gKAaRy dBWXIC"
             >
               <div
-                class="sc-dlnjwi knNxSD"
+                class="sc-gtsrHT lhUmru"
               />
               <div
-                class="sc-hKFxyN fVhutZ"
+                class="sc-dlnjwi CiaOg"
                 data-testid="loader"
               >
                 <div
-                  class="sc-eCApnc icxlmd"
+                  class="sc-hKFxyN fYTRnF"
                 />
               </div>
               
@@ -43,15 +43,33 @@ Object {
       >
         <div>
           <div
-            class="sc-dlnjwi knNxSD"
-          />
-          <div
-            class="sc-hKFxyN fVhutZ"
-            data-testid="loader"
+            class="sc-iCoGMd fYbrrC"
           >
             <div
-              class="sc-eCApnc icxlmd"
-            />
+              class="sc-fujyAs bjsNot"
+            >
+              <iframe
+                frameborder="0"
+                height="600px"
+                src="https://www.youtube.com/embed/undefined"
+                title="video"
+                width="100%"
+              />
+              <h2
+                class="sc-crzoAE jTMVwa mb-1"
+                weight="600"
+              />
+              <p
+                class="sc-crzoAE ftDVhL"
+              />
+            </div>
+            <div
+              class="sc-fujyAs ggBxAR"
+            >
+              <div
+                class="sc-pNWdM iLxsmF"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -64,26 +82,26 @@ Object {
       <div>
         <h2
           center="true"
-          class="sc-dIsUp iKVnoz title py-1"
+          class="sc-crzoAE gNzgsY title py-1"
           weight="300"
         >
           Welcome to the Challenge!
         </h2>
         <div
-          class="sc-gKAaRy gglYWI"
+          class="sc-jSFjdj eUsWzQ"
         >
           <div
-            class="sc-iCoGMd iiAeFS"
+            class="sc-gKAaRy dBWXIC"
           >
             <div
-              class="sc-dlnjwi knNxSD"
+              class="sc-gtsrHT lhUmru"
             />
             <div
-              class="sc-hKFxyN fVhutZ"
+              class="sc-dlnjwi CiaOg"
               data-testid="loader"
             >
               <div
-                class="sc-eCApnc icxlmd"
+                class="sc-hKFxyN fYTRnF"
               />
             </div>
             
@@ -96,15 +114,33 @@ Object {
     >
       <div>
         <div
-          class="sc-dlnjwi knNxSD"
-        />
-        <div
-          class="sc-hKFxyN fVhutZ"
-          data-testid="loader"
+          class="sc-iCoGMd fYbrrC"
         >
           <div
-            class="sc-eCApnc icxlmd"
-          />
+            class="sc-fujyAs bjsNot"
+          >
+            <iframe
+              frameborder="0"
+              height="600px"
+              src="https://www.youtube.com/embed/undefined"
+              title="video"
+              width="100%"
+            />
+            <h2
+              class="sc-crzoAE jTMVwa mb-1"
+              weight="600"
+            />
+            <p
+              class="sc-crzoAE ftDVhL"
+            />
+          </div>
+          <div
+            class="sc-fujyAs ggBxAR"
+          >
+            <div
+              class="sc-pNWdM iLxsmF"
+            />
+          </div>
         </div>
       </div>
     </div>

@@ -4,7 +4,6 @@ import { render } from '@testing-library/react';
 import { HashRouter } from 'react-router-dom';
 
 import Favorites from '../index';
-import { GlobalStyles } from '../../../GlobalStyles.styled';
 import { AppRouter } from '../../../routers/AppRouter';
 // import data from '../../../mocks/youtube.json';
 import { ThemeProvider } from '../../../ThemeProvider';
@@ -44,7 +43,6 @@ describe('Testing Favorites component', () => {
     tree = render(
       <ContextWrapper>
         <ThemeProvider>
-          <GlobalStyles />
           <HashRouter>
             <AppRouter />
             <Favorites />

@@ -3,7 +3,6 @@ import { render } from '@testing-library/react';
 import { ThemeProvider } from 'styled-components';
 
 import Typography from '../index';
-import { GlobalStyles } from '../../../../GlobalStyles.styled';
 import { darkTheme, lightTheme } from '../../../../ThemeProvider/values';
 
 describe('Testing Typography component', () => {
@@ -13,7 +12,6 @@ describe('Testing Typography component', () => {
   beforeEach(() => {
     tree = render(
       <ThemeProvider theme={theme ? lightTheme : darkTheme}>
-        <GlobalStyles />
         <Typography center="true">Some</Typography>
         <Typography header="true">Some</Typography>
         <Typography tiny="true">Some</Typography>

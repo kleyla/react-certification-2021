@@ -1,43 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Testing Header component should take a snapshop 1`] = `
+exports[`Testing App component should to take snapshop 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div
-        class="sc-bdnxRM hCekCk"
-      >
-        <div>
-          <h2
-            center="true"
-            class="sc-crzoAE gNzgsY title py-1"
-            weight="300"
-          >
-            Welcome to the Challenge!
-          </h2>
-          <div
-            class="sc-jSFjdj eUsWzQ"
-          >
-            <div
-              class="sc-gKAaRy dBWXIC"
-            >
-              <div
-                class="sc-gtsrHT lhUmru"
-              />
-              <div
-                class="sc-dlnjwi CiaOg"
-                data-testid="loader"
-              >
-                <div
-                  class="sc-hKFxyN fYTRnF"
-                />
-              </div>
-              
-            </div>
-          </div>
-        </div>
-      </div>
       <nav
         class="sc-fFSPTT cvJKtk"
       >
@@ -129,42 +96,42 @@ Object {
           </div>
         </ul>
       </nav>
-    </div>
-  </body>,
-  "container": <div>
-    <div
-      class="sc-bdnxRM hCekCk"
-    >
-      <div>
-        <h2
-          center="true"
-          class="sc-crzoAE gNzgsY title py-1"
-          weight="300"
-        >
-          Welcome to the Challenge!
-        </h2>
-        <div
-          class="sc-jSFjdj eUsWzQ"
-        >
+      <div
+        class="sc-bdnxRM hCekCk"
+      >
+        <div>
+          <h2
+            center="true"
+            class="sc-crzoAE gNzgsY title py-1"
+            weight="300"
+          >
+            Welcome to the Challenge!
+          </h2>
           <div
-            class="sc-gKAaRy dBWXIC"
+            class="sc-jSFjdj eUsWzQ"
           >
             <div
-              class="sc-gtsrHT lhUmru"
-            />
-            <div
-              class="sc-dlnjwi CiaOg"
-              data-testid="loader"
+              class="sc-gKAaRy dBWXIC"
             >
               <div
-                class="sc-hKFxyN fYTRnF"
+                class="sc-gtsrHT lhUmru"
               />
+              <div
+                class="sc-dlnjwi CiaOg"
+                data-testid="loader"
+              >
+                <div
+                  class="sc-hKFxyN fYTRnF"
+                />
+              </div>
+              
             </div>
-            
           </div>
         </div>
       </div>
     </div>
+  </body>,
+  "container": <div>
     <nav
       class="sc-fFSPTT cvJKtk"
     >
@@ -256,6 +223,39 @@ Object {
         </div>
       </ul>
     </nav>
+    <div
+      class="sc-bdnxRM hCekCk"
+    >
+      <div>
+        <h2
+          center="true"
+          class="sc-crzoAE gNzgsY title py-1"
+          weight="300"
+        >
+          Welcome to the Challenge!
+        </h2>
+        <div
+          class="sc-jSFjdj eUsWzQ"
+        >
+          <div
+            class="sc-gKAaRy dBWXIC"
+          >
+            <div
+              class="sc-gtsrHT lhUmru"
+            />
+            <div
+              class="sc-dlnjwi CiaOg"
+              data-testid="loader"
+            >
+              <div
+                class="sc-hKFxyN fYTRnF"
+              />
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

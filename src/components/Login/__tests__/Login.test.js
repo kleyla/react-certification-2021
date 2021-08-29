@@ -4,7 +4,6 @@ import { render, screen, fireEvent } from '@testing-library/react';
 import { HashRouter } from 'react-router-dom';
 
 import Login from '../index';
-import { GlobalStyles } from '../../../GlobalStyles.styled';
 import { AppRouter } from '../../../routers/AppRouter';
 import { ContextWrapper } from '../../../context/ContextWrapper';
 import { ThemeProvider } from '../../../ThemeProvider';
@@ -26,7 +25,6 @@ describe('Testing Login component', () => {
     tree = render(
       <ContextWrapper>
         <ThemeProvider>
-          <GlobalStyles />
           <HashRouter>
             <AppRouter />
             <Login />

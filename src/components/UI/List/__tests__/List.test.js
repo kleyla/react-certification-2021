@@ -3,7 +3,6 @@ import { render } from '@testing-library/react';
 import { ThemeProvider } from 'styled-components';
 
 import List from '../index';
-import { GlobalStyles } from '../../../../GlobalStyles.styled';
 import { darkTheme, lightTheme } from '../../../../ThemeProvider/values';
 
 describe('Testing List component', () => {
@@ -13,7 +12,6 @@ describe('Testing List component', () => {
   beforeEach(() => {
     tree = render(
       <ThemeProvider theme={theme ? lightTheme : darkTheme}>
-        <GlobalStyles />
         <List md={4}>
           <a href="/">Some</a>
         </List>

@@ -3,7 +3,6 @@ import { fireEvent, screen, render } from '@testing-library/react';
 import { ThemeProvider } from 'styled-components';
 
 import Button from '../index';
-import { GlobalStyles } from '../../../../GlobalStyles.styled';
 import { darkTheme, lightTheme } from '../../../../ThemeProvider/values';
 
 describe('Testing Toggle component', () => {
@@ -14,7 +13,6 @@ describe('Testing Toggle component', () => {
   beforeEach(() => {
     tree = render(
       <ThemeProvider theme={theme ? lightTheme : darkTheme}>
-        <GlobalStyles />
         <Button color="primary" onClick={click} data-testid="button" size="medium">
           Submit
         </Button>

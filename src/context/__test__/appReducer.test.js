@@ -17,7 +17,7 @@ describe('Testing appReducer', () => {
 
   it('should update search data', () => {
     const action = {
-      type: Types.search,
+      type: Types.SEARCH,
       payload: {
         search: 'react js',
       },
@@ -34,7 +34,7 @@ describe('Testing appReducer', () => {
 
   it('should update theme to false', () => {
     const action = {
-      type: Types.theme,
+      type: Types.THEME,
     };
     const state = appReducer(initialState, action);
     expect(state).toEqual({
