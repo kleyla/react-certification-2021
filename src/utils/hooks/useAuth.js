@@ -1,10 +1,9 @@
 import { useContext, useState } from 'react';
 import { AppContext } from '../../context/appContext';
 import { firebase } from '../../firebase/firebase.config';
-import { types } from '../../types/types';
 
 export const useAuth = () => {
-  const { dispatch } = useContext(AppContext);
+  const { auth, authLogout } = useContext(AppContext);
   const [isLoading, setIsLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
 
@@ -16,14 +15,11 @@ export const useAuth = () => {
       .then((userCredential) => {
         // Signed in
         const { user } = userCredential;
-        dispatch({
-          type: types.auth,
-          payload: {
-            isAuthenticated: true,
-            auth: {
-              uid: user.uid,
-              email: user.email,
-            },
+        auth({
+          isAuthenticated: true,
+          auth: {
+            uid: user.uid,
+            email: user.email,
           },
         });
         setIsLoading(false);
@@ -42,14 +38,11 @@ export const useAuth = () => {
       .then((userCredential) => {
         // Signed in
         const { user } = userCredential;
-        dispatch({
-          type: types.auth,
-          payload: {
-            isAuthenticated: true,
-            auth: {
-              uid: user.uid,
-              email: user.email,
-            },
+        auth({
+          isAuthenticated: true,
+          auth: {
+            uid: user.uid,
+            email: user.email,
           },
         });
         setIsLoading(false);
@@ -65,9 +58,7 @@ export const useAuth = () => {
       .auth()
       .signOut()
       .then(() => {
-        dispatch({
-          type: types.logout,
-        });
+        authLogout();
       })
       .catch((error) => {
         setErrorMessage(() => error.message);
