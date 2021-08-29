@@ -4,7 +4,7 @@ import { ThemeProvider } from 'styled-components';
 
 import ListItemAvatar from '../index';
 import { GlobalStyles } from '../../../../GlobalStyles.styled';
-import { darkTheme, lightTheme } from '../../../../theming';
+import { darkTheme, lightTheme } from '../../../../ThemeProvider/values';
 
 describe('Testing ListItemAvatar component', () => {
   const theme = true;

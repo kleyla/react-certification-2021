@@ -4,7 +4,7 @@ import { ThemeProvider } from 'styled-components';
 
 import List from '../index';
 import { GlobalStyles } from '../../../../GlobalStyles.styled';
-import { darkTheme, lightTheme } from '../../../../theming';
+import { darkTheme, lightTheme } from '../../../../ThemeProvider/values';
 
 describe('Testing List component', () => {
   const theme = true;

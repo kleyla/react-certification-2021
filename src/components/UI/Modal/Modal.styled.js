@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const ModalStyled = styled.div`
-  position: absolute;
+  position: fixed;
   top: 20%;
   left: calc(50% - 250px);
   display: flex;

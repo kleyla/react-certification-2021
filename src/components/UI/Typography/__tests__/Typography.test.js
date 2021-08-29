@@ -4,7 +4,7 @@ import { ThemeProvider } from 'styled-components';
 
 import Typography from '../index';
 import { GlobalStyles } from '../../../../GlobalStyles.styled';
-import { darkTheme, lightTheme } from '../../../../theming';
+import { darkTheme, lightTheme } from '../../../../ThemeProvider/values';
 
 describe('Testing Typography component', () => {
   const theme = true;

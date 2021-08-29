@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { ShadowContainerStyled } from './ShadowContainer.styled';
+import { ShadowStyled } from './ShadowContainer.styled';
 
 const ShadowContainer = ({ children, ...otherProps }) => {
   return ReactDOM.createPortal(
     <>
-      <ShadowContainerStyled {...otherProps} />
+      <ShadowStyled {...otherProps} />
       {children}
     </>,
     document.getElementById('modal-root')

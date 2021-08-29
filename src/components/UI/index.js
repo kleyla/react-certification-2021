@@ -9,6 +9,7 @@ import ListItem from './ListItem';
 import ListItemAvatar from './ListItemAvatar';
 import ListItemBody from './ListItemBody';
 import Typography from './Typography';
+import Modal from './Modal';
 
 export {
   Button,
@@ -21,5 +22,6 @@ export {
   ListItemAvatar,
   ListItemBody,
   Loader,
+  Modal,
   Typography,
 };

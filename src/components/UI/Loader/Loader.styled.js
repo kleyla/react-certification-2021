@@ -1,27 +1,13 @@
 import styled, { keyframes } from 'styled-components';
 
-export const LoaderContainerStyled = styled.div`
+export const ContainerLoader = styled.div`
   width: 100vw;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-`;
-export const ShadowContainer = styled.div`
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0px;
-  background-color: black;
-  opacity: 0.7;
-  z-index: 4;
-`;
-export const ContainerLoader = styled.div`
-  width: 100%;
-  height: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   display: flex;
   justify-content: center;
   align-items: center;
