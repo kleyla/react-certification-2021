@@ -1,79 +1,67 @@
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 
 export const useFavorites = (idFav = '') => {
   const [favorites, setFavorites] = useState([]);
-  const [favoriteVideos, setFavoriteVideos] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
-  const [errorMessage, setErrorMessage] = useState('');
   const [videoSelected, setVideoSelected] = useState({});
-
-  const getFavorites = () => {
-    let favoritesArray = localStorage.getItem('favorites');
-    if (favoritesArray) {
-      favoritesArray = favoritesArray.split(',');
-    } else {
-      favoritesArray = [];
-    }
-    setFavorites(() => favoritesArray);
-  };
 
   const isFavorite = (id) => {
     const fav = favorites.find((favorite) => {
-      return favorite === id;
+      return favorite.id === id;
     });
     return fav;
   };
 
-  const addFavorite = (id) => {
-    setFavorites(() => [...favorites, id]);
+  const addFavorite = (id, title, description, thumbnails, channel) => {
+    setFavorites(() => [...favorites, { id, title, description, thumbnails, channel }]);
   };
 
   const removeFavorite = (id) => {
     const favs = favorites.filter((favorite) => {
-      return favorite !== id;
+      return favorite.id !== id;
     });
     setFavorites(() => favs);
   };
 
-  const updatelocalStorage = () => {
-    localStorage.setItem('favorites', favorites);
-  };
+  const getFavorites = useCallback(() => {
+    setIsLoading(true);
+    let favoritesArray = localStorage.getItem('favorites');
+    if (favoritesArray) {
+      favoritesArray = JSON.parse(favoritesArray);
+    } else {
+      favoritesArray = [];
+    }
+    setFavorites(() => favoritesArray);
+    setIsLoading(false);
+  }, []);
 
-  const getVideoSelected = (videos) => {
+  const updatelocalStorage = useCallback(() => {
+    localStorage.setItem('favorites', JSON.stringify(favorites));
+  }, [favorites]);
+
+  const getVideoSelected = useCallback(() => {
     if (idFav) {
-      const fav = videos.find((video) => {
+      const fav = favorites.find((video) => {
         return video.id === idFav;
       });
       setVideoSelected(() => fav);
     }
-  };
-
-  const getFavoriteVideosFromYoutube = async () => {
-    try {
-      const response = await fetch(
-        `https://www.googleapis.com/youtube/v3/videos?key=${process.env.REACT_APP_YOUTUBE_API_KEY}&type=video&part=snippet&id=${favorites}`
-      );
-      const resp = await response.json();
-      if (resp.error) {
-        setErrorMessage(resp.error.message);
-      } else {
-        setFavoriteVideos(resp.items);
-        getVideoSelected(resp.items);
-      }
-      setIsLoading(false);
-    } catch (e) {
-      setErrorMessage(e.message);
-    }
-  };
+  }, [idFav, favorites]);
 
   useEffect(() => {
+    console.log('getFavorites solo una vez');
     getFavorites();
-  }, []);
+  }, [getFavorites]);
 
   useEffect(() => {
+    console.log('updatelocalStorage cada vez que se agregue o elimine un favorito');
     updatelocalStorage();
-    getFavoriteVideosFromYoutube();
-  }, [favorites]);
+  }, [updatelocalStorage]);
+
+  useEffect(() => {
+    console.log('getVideoSelected');
+    getVideoSelected();
+  }, [getVideoSelected]);
 
   return {
     favorites,
@@ -82,7 +70,5 @@ export const useFavorites = (idFav = '') => {
     isFavorite,
     videoSelected,
     isLoading,
-    favoriteVideos,
-    errorMessage,
   };
 };

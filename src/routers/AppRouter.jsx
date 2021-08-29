@@ -15,7 +15,6 @@ export const AppRouter = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   useEffect(() => {
-    console.log('onAuthStateChanged');
     firebase.auth().onAuthStateChanged(async (user) => {
       if (user?.uid) {
         auth({
@@ -30,7 +29,7 @@ export const AppRouter = () => {
         setIsLoggedIn(false);
       }
     });
-  }, []);
+  }, [auth]);
 
   return (
     <Switch>
